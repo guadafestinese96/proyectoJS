@@ -1,3 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+a,
+li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-image: url(../images/fotoperfumes3.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body header {
+  background-color: #ff13a7;
+}
+
+body header #navBar {
+  display: flex;
+}
+
+body header #navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body header #navBar ul li {
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body header #navBar img {
+  width: 120px;
+  border-radius: 100%;
+  border: solid black 2px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.form-select {
+  width: 350px;
+}
 
 /*# sourceMappingURL=style.css.map */
