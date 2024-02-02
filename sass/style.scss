@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,18 @@ li {
     color: black;
 }
 
-body {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
     background-image: url(../images/fotoperfumes3.jpg);
     background-size: cover;
+}
+
+body {
+    
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
@@ -23,14 +34,17 @@ body {
 
     header {
         background-color: #ff13a7;
+        z-index: 100;
 
         #navBar {
             display: flex;
+            justify-content: space-between;
 
             ul {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-right: 30px;
 
                 li {
                     padding: 5px;
@@ -54,5 +68,65 @@ body {
 
 
 .form-select {
-    width: 350px;
+    width: 30vw;
+    color: #ff13a7;
+}
+
+.titleIndex {
+    
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 0.25em;
+        text-shadow: #ff13a7 5px 2px 5px; 
+        font-size: 40px;
+        margin: 20px;
+        
+    }
+
+    h2{
+        text-shadow: whitesmoke 2px 2px 5px; 
+        font-size: 25px;
+        letter-spacing: -0.05em;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+
+}
+
+.titleEnvios {
+    h1,
+    h2,
+    h3 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 10px;
+        margin: 10px;
+        text-shadow: #ff13a7 2px 2px 2px;
+    }
+
+    h2{
+        font-size: 25px;
+        text-shadow: whitesmoke 2px 2px 2px;
+    }
+    h3 {
+        color: white;
+    }
+}
+
+footer{
+    height: 90px;
+    background-color: #ff13a7;
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .logosFooter{
+        margin-right: 30px;
+        
+        img{
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+    }
+    }
+    
 }

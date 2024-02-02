@@ -4,10 +4,22 @@ switch (opcion) {
         let op = parseInt(prompt("Si es de CABA ingrese 1, si es de GBA ingrese 2"));
         switch (op) {
             case 1:
-                alert("El envío por motomensajería en CABA vale $2500");
+                let ingresoCABA = parseInt(prompt("Ingrese los km desde Avenida Cabildo 900 hacia su dirección: "));
+                if(ingresoCABA == 0){
+                    alert("Error, ingrese un numero valido");
+                }else{
+                    let resultado1 = ingresoCABA * 250;
+                    alert ("El valor del envío por motomensajería a su domicilio es: $" + resultado1);
+                }
                 break;
             case 2:
-                alert("El envío por motomensajería en GBA vale $4000");
+                let ingresoGBA = parseInt(prompt("Ingrese los km desde Avenida Patricios 200 hacia su dirección: "));
+                if(ingresoGBA == 0){
+                    alert("Error, ingrese un numero valido");
+                }else{
+                    let resultado2 = ingresoGBA * 250;
+                    alert ("El valor del envío por motomensajería a su domicilio es: $" + resultado2);
+                }
                 break;
             default: 
                 alert("Opción inválida");
@@ -15,10 +27,10 @@ switch (opcion) {
         }
         break;
     case 2:
-        alert("El envío por Vía Cargo al Norte de Argentina vale $8500");
+        alert("El envío por Vía Cargo al Norte de Argentina vale $10.500");
         break;
     case 3:
-        alert("El envío al Centro de Argentina por Vía Cargo vale $7500");
+        alert("El envío al Centro de Argentina por Vía Cargo vale $9.500");
         break;
     case 4:
         alert("El envío al Sur de Argentina vale $10.500");
@@ -27,3 +39,4 @@ switch (opcion) {
         alert("OPCION INVALIDA");
         break;
 }
+
