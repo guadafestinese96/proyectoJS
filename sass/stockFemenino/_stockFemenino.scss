@@ -1,0 +1,199 @@
+#mainFemenino {
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 10px;
+        margin: 10px;
+        text-shadow: #ff13a7 2px 2px 2px;
+        letter-spacing: 0.1em;
+    }
+}
+
+#tablaStockFemenino {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "pacoRabanneO pacoRabanneLM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorJ diorMD azzaro"
+        "muglerAN muglerAL miyake lancome tommy yves dolceGabbana moschino"
+        "givenchyL givenchyAD calvinKleinES calvinKleinET calvinKleinOS calvinKleinONE kenzo jesusDelPozo"
+        "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG"
+    ;
+    margin: 20px;
+
+    .caja {
+        background-color: #ffffff;
+        border: #000000 solid 2px;
+        padding: 10px;
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        h2 {
+            background-color: #ff13a7;
+            padding: 5px;
+            border: #000000 solid 2px;
+            font-size: 15px;
+            height: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h3 {
+            background-color: #ffffff;
+            padding: 5px;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h4 {
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .imgCaja {
+            width: 120px;
+            height: 130px;
+        }
+    }
+
+    .pacoRabanneO {
+        grid-area: pacoRabanneO;
+    }
+
+    .pacoRabanneLM {
+        grid-area: pacoRabanneLM;
+    }
+
+    .pacoRabanneXSL {
+        grid-area: pacoRabanneXSL;
+    }
+
+    .pacoRabannXS {
+        grid-area: pacoRabanneXS;
+    }
+
+    .pacoRabannePURE {
+        grid-area: pacoRabannePURE;
+    }
+
+    .diorJ {
+        grid-area: diorJ;
+    }
+
+    .diorMD {
+        grid-area: diorMD;
+    }
+
+    .azzaro {
+        grid-area: azzaro;
+    }
+
+    .muglerAN {
+        grid-area: muglerAN;
+    }
+
+    .muglerAL {
+        grid-area: muglerAL;
+    }
+
+    .miyake {
+        grid-area: miyake;
+    }
+
+    .lancome {
+        grid-area: lancome;
+    }
+
+    .tommy {
+        grid-area: tommy;
+    }
+
+    .yves {
+        grid-area: yves;
+    }
+
+    .dolceGabbana {
+        grid-area: dolceGabbana;
+    }
+
+    .moschino {
+        grid-area: moschino;
+    }
+
+    .givenchyL {
+        grid-area: givenchyL;
+    }
+
+    .givenchyAD {
+        grid-area: givenchyAD;
+
+        img {
+            height: 120px;
+        }
+    }
+
+    .calvinKleinES {
+        grid-area: calvinKleinES;
+    }
+
+    .calvinKleinET {
+        grid-area: calvinKleinET;
+    }
+
+    .calvinKleinOS {
+        grid-area: calvinKleinOS;
+    }
+
+    .calvinKleinONE {
+        grid-area: calvinKleinONE;
+    }
+
+    .kenzo {
+        grid-area: kenzo;
+
+        img {
+            height: 120px;
+            width: 80px;
+        }
+    }
+
+    .jesusDelPozo {
+        grid-area: jesusDelPozo;
+    }
+
+    .armaniMW {
+        grid-area: armaniMW;
+    }
+
+    .armaniCODE {
+        grid-area: armaniCODE;
+    }
+
+    .armaniSI {
+        grid-area: armaniSI;
+    }
+
+    .chGG {
+        grid-area: chGG;
+    }
+
+    .ch212CLA {
+        grid-area: ch212CLA;
+    }
+
+    .chVIP {
+        grid-area: chVIP;
+    }
+
+    .chROSE {
+        grid-area: chROSE;
+    }
+
+    .chSEXY {
+        grid-area: chSEXY;
+    }
+
+}
