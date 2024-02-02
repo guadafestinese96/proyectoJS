@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +24,7 @@ main {
 }
 
 body {
-    
+
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
@@ -73,18 +71,18 @@ body {
 }
 
 .titleIndex {
-    
-    h1{
+
+    h1 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         letter-spacing: 0.25em;
-        text-shadow: #ff13a7 5px 2px 5px; 
+        text-shadow: #ff13a7 5px 2px 5px;
         font-size: 40px;
         margin: 20px;
-        
+
     }
 
-    h2{
-        text-shadow: whitesmoke 2px 2px 5px; 
+    h2 {
+        text-shadow: whitesmoke 2px 2px 5px;
         font-size: 25px;
         letter-spacing: -0.05em;
         font-family: 'Cedarville Cursive', cursive;
@@ -93,6 +91,7 @@ body {
 }
 
 .titleEnvios {
+
     h1,
     h2,
     h3 {
@@ -102,16 +101,17 @@ body {
         text-shadow: #ff13a7 2px 2px 2px;
     }
 
-    h2{
+    h2 {
         font-size: 25px;
         text-shadow: whitesmoke 2px 2px 2px;
     }
+
     h3 {
         color: white;
     }
 }
 
-footer{
+footer {
     height: 90px;
     background-color: #ff13a7;
     margin-top: auto;
@@ -119,22 +119,22 @@ footer{
     justify-content: end;
     align-items: center;
 
-    .logosFooter{
+    .logosFooter {
         margin-right: 30px;
-        
-        img{
-        width: 70px;
-        height: 70px;
-        padding: 5px;
+
+        img {
+            width: 70px;
+            height: 70px;
+            padding: 5px;
+        }
     }
-    }
-    
+
 }
 
 
 //STOCK FEMENINO
-#mainFemenino{
-    h1{
+#mainFemenino {
+    h1 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         padding: 10px;
         margin: 10px;
@@ -156,145 +156,179 @@ footer{
     ;
     margin: 20px;
 
-    h2 {
-        background-color: #ff13a7;
-        padding: 5px;
-        border: #000000 solid 2px;
-        font-size: 15px;
-        height: 60px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    }
-    h3 {
+    .caja {
         background-color: #ffffff;
-        padding: 5px;
-        font-size: 13px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
-    }
-    
-    h4{
-        font-size: 11px;
-        margin-top: 5px;
-    }
-}
-.caja {
-    background-color: #ffffff;
-    border: #000000 solid 2px;
-    padding: 10px;
-    width: 150px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.pacoRabanneO {
-    grid-area: pacoRabanneO;
-}
-.pacoRabanneLM {
-    grid-area: pacoRabanneLM;
-}
-.pacoRabanneXSL {
-    grid-area: pacoRabanneXSL;
-}
-.pacoRabannXS {
-    grid-area: pacoRabanneXS;
-}
-.pacoRabannePURE {
-    grid-area: pacoRabannePURE;
-}
-.diorJ {
-    grid-area: diorJ;
-}
-.diorMD {
-    grid-area: diorMD;
-}
-.azzaro {
-    grid-area: azzaro;
-}
-.muglerAN {
-    grid-area: muglerAN;
-}
-.muglerAL {
-    grid-area: muglerAL;
-}
-.miyake {
-    grid-area: miyake;
-}
-.lancome {
-    grid-area: lancome;
-}
-.tommy {
-    grid-area: tommy;
-}
-.yves{
-    grid-area: yves;
-}
-.dolceGabbana {
-    grid-area: dolceGabbana;
-}
-.moschino {
-    grid-area: moschino;
-}
-.givenchyL {
-    grid-area: givenchyL;
-}
-.givenchyAD {
-    grid-area: givenchyAD;
-    img{
-        height: 120px;
-    }
-}
-.calvinKleinES {
-    grid-area: calvinKleinES;
-}
-.calvinKleinET {
-    grid-area: calvinKleinET;
-}
-.calvinKleinOS {
-    grid-area: calvinKleinOS;
-}
-.calvinKleinONE {
-    grid-area: calvinKleinONE;
-}
-.kenzo {
-    grid-area: kenzo;
-    img{
-        height: 120px;
-        width: 80px;
-    }
-}
-.jesusDelPozo {
-    grid-area: jesusDelPozo;
-}
-.armaniMW {
-    grid-area: armaniMW;
-}
-.armaniCODE {
-    grid-area: armaniCODE;
-}
-.armaniSI {
-    grid-area: armaniSI;
-}
-.chGG {
-    grid-area: chGG;
-}
+        border: #000000 solid 2px;
+        padding: 10px;
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
-.ch212CLA {
-    grid-area: ch212CLA;
-}
-.chVIP {
-    grid-area: chVIP;
-}
-.chROSE {
-    grid-area: chROSE;
-}
-.chSEXY {
-    grid-area: chSEXY;
-}
+        h2 {
+            background-color: #ff13a7;
+            padding: 5px;
+            border: #000000 solid 2px;
+            font-size: 15px;
+            height: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+        }
 
+        h3 {
+            background-color: #ffffff;
+            padding: 5px;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-.imgCaja{
-    width: 120px;
-    height: 130px;
+        }
+
+        h4 {
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .imgCaja {
+            width: 120px;
+            height: 130px;
+        }
+    }
+
+    .pacoRabanneO {
+        grid-area: pacoRabanneO;
+    }
+
+    .pacoRabanneLM {
+        grid-area: pacoRabanneLM;
+    }
+
+    .pacoRabanneXSL {
+        grid-area: pacoRabanneXSL;
+    }
+
+    .pacoRabannXS {
+        grid-area: pacoRabanneXS;
+    }
+
+    .pacoRabannePURE {
+        grid-area: pacoRabannePURE;
+    }
+
+    .diorJ {
+        grid-area: diorJ;
+    }
+
+    .diorMD {
+        grid-area: diorMD;
+    }
+
+    .azzaro {
+        grid-area: azzaro;
+    }
+
+    .muglerAN {
+        grid-area: muglerAN;
+    }
+
+    .muglerAL {
+        grid-area: muglerAL;
+    }
+
+    .miyake {
+        grid-area: miyake;
+    }
+
+    .lancome {
+        grid-area: lancome;
+    }
+
+    .tommy {
+        grid-area: tommy;
+    }
+
+    .yves {
+        grid-area: yves;
+    }
+
+    .dolceGabbana {
+        grid-area: dolceGabbana;
+    }
+
+    .moschino {
+        grid-area: moschino;
+    }
+
+    .givenchyL {
+        grid-area: givenchyL;
+    }
+
+    .givenchyAD {
+        grid-area: givenchyAD;
+
+        img {
+            height: 120px;
+        }
+    }
+
+    .calvinKleinES {
+        grid-area: calvinKleinES;
+    }
+
+    .calvinKleinET {
+        grid-area: calvinKleinET;
+    }
+
+    .calvinKleinOS {
+        grid-area: calvinKleinOS;
+    }
+
+    .calvinKleinONE {
+        grid-area: calvinKleinONE;
+    }
+
+    .kenzo {
+        grid-area: kenzo;
+
+        img {
+            height: 120px;
+            width: 80px;
+        }
+    }
+
+    .jesusDelPozo {
+        grid-area: jesusDelPozo;
+    }
+
+    .armaniMW {
+        grid-area: armaniMW;
+    }
+
+    .armaniCODE {
+        grid-area: armaniCODE;
+    }
+
+    .armaniSI {
+        grid-area: armaniSI;
+    }
+
+    .chGG {
+        grid-area: chGG;
+    }
+
+    .ch212CLA {
+        grid-area: ch212CLA;
+    }
+
+    .chVIP {
+        grid-area: chVIP;
+    }
+
+    .chROSE {
+        grid-area: chROSE;
+    }
+
+    .chSEXY {
+        grid-area: chSEXY;
+    }
+
 }
