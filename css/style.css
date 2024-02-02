@@ -123,26 +123,7 @@ footer .logosFooter img {
   grid-template-areas: "pacoRabanneO pacoRabanneLM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorJ diorMD azzaro" "muglerAN muglerAL miyake lancome tommy yves dolceGabbana moschino" "givenchyL givenchyAD calvinKleinES calvinKleinET calvinKleinOS calvinKleinONE kenzo jesusDelPozo" "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG";
   margin: 20px;
 }
-#tablaStockFemenino h2 {
-  background-color: #ff13a7;
-  padding: 5px;
-  border: #000000 solid 2px;
-  font-size: 15px;
-  height: 60px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockFemenino h3 {
-  background-color: #ffffff;
-  padding: 5px;
-  font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockFemenino h4 {
-  font-size: 10px;
-  margin-top: 5px;
-}
-
-.caja {
+#tablaStockFemenino .caja {
   background-color: #ffffff;
   border: #000000 solid 2px;
   padding: 10px;
@@ -151,145 +132,253 @@ footer .logosFooter img {
   text-align: center;
   justify-content: center;
 }
-
-.pacoRabanneO {
+#tablaStockFemenino .caja h2 {
+  background-color: #ff13a7;
+  padding: 5px;
+  border: #000000 solid 2px;
+  font-size: 15px;
+  height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockFemenino .caja h3 {
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockFemenino .caja h4 {
+  font-size: 11px;
+  margin-top: 5px;
+}
+#tablaStockFemenino .caja .imgCaja {
+  width: 120px;
+  height: 130px;
+}
+#tablaStockFemenino .pacoRabanneO {
   grid-area: pacoRabanneO;
 }
-
-.pacoRabanneLM {
+#tablaStockFemenino .pacoRabanneLM {
   grid-area: pacoRabanneLM;
 }
-
-.pacoRabanneXSL {
+#tablaStockFemenino .pacoRabanneXSL {
   grid-area: pacoRabanneXSL;
 }
-
-.pacoRabannXS {
+#tablaStockFemenino .pacoRabannXS {
   grid-area: pacoRabanneXS;
 }
-
-.pacoRabannePURE {
+#tablaStockFemenino .pacoRabannePURE {
   grid-area: pacoRabannePURE;
 }
-
-.diorJ {
+#tablaStockFemenino .diorJ {
   grid-area: diorJ;
 }
-
-.diorMD {
+#tablaStockFemenino .diorMD {
   grid-area: diorMD;
 }
-
-.azzaro {
+#tablaStockFemenino .azzaro {
   grid-area: azzaro;
 }
-
-.muglerAN {
+#tablaStockFemenino .muglerAN {
   grid-area: muglerAN;
 }
-
-.muglerAL {
+#tablaStockFemenino .muglerAL {
   grid-area: muglerAL;
 }
-
-.miyake {
+#tablaStockFemenino .miyake {
   grid-area: miyake;
 }
-
-.lancome {
+#tablaStockFemenino .lancome {
   grid-area: lancome;
 }
-
-.tommy {
+#tablaStockFemenino .tommy {
   grid-area: tommy;
 }
-
-.yves {
+#tablaStockFemenino .yves {
   grid-area: yves;
 }
-
-.dolceGabbana {
+#tablaStockFemenino .dolceGabbana {
   grid-area: dolceGabbana;
 }
-
-.moschino {
+#tablaStockFemenino .moschino {
   grid-area: moschino;
 }
-
-.givenchyL {
+#tablaStockFemenino .givenchyL {
   grid-area: givenchyL;
 }
-
-.givenchyAD {
+#tablaStockFemenino .givenchyAD {
   grid-area: givenchyAD;
 }
-.givenchyAD img {
+#tablaStockFemenino .givenchyAD img {
   height: 120px;
 }
-
-.calvinKleinES {
+#tablaStockFemenino .calvinKleinES {
   grid-area: calvinKleinES;
 }
-
-.calvinKleinET {
+#tablaStockFemenino .calvinKleinET {
   grid-area: calvinKleinET;
 }
-
-.calvinKleinOS {
+#tablaStockFemenino .calvinKleinOS {
   grid-area: calvinKleinOS;
 }
-
-.calvinKleinONE {
+#tablaStockFemenino .calvinKleinONE {
   grid-area: calvinKleinONE;
 }
-
-.kenzo {
+#tablaStockFemenino .kenzo {
   grid-area: kenzo;
 }
-.kenzo img {
+#tablaStockFemenino .kenzo img {
   height: 120px;
   width: 80px;
 }
-
-.jesusDelPozo {
+#tablaStockFemenino .jesusDelPozo {
   grid-area: jesusDelPozo;
 }
-
-.armaniMW {
+#tablaStockFemenino .armaniMW {
   grid-area: armaniMW;
 }
-
-.armaniCODE {
+#tablaStockFemenino .armaniCODE {
   grid-area: armaniCODE;
 }
-
-.armaniSI {
+#tablaStockFemenino .armaniSI {
   grid-area: armaniSI;
 }
-
-.chGG {
+#tablaStockFemenino .chGG {
   grid-area: chGG;
 }
-
-.ch212CLA {
+#tablaStockFemenino .ch212CLA {
   grid-area: ch212CLA;
 }
-
-.chVIP {
+#tablaStockFemenino .chVIP {
   grid-area: chVIP;
 }
-
-.chROSE {
+#tablaStockFemenino .chROSE {
   grid-area: chROSE;
 }
-
-.chSEXY {
+#tablaStockFemenino .chSEXY {
   grid-area: chSEXY;
 }
 
-.imgCaja {
+#mainMasculino h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: #ff13a7 2px 2px 2px;
+  letter-spacing: 0.1em;
+}
+
+#tablaStockMasculino {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas: "pacoRabannePh pacoRabanneOM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorFHT diorSAUV" "muglerAMEN miyake tommy calvinKleinONE kenzo poloBlue azzaro" "ch212CLA chVIP chBB creed ombre eros jeans" "armaniYOU armaniACQUA armaniCODE bvPourHomme vacio vacio vacio";
+  margin: 20px;
+}
+#tablaStockMasculino .caja {
+  background-color: #ffffff;
+  border: #000000 solid 2px;
+  padding: 10px;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#tablaStockMasculino .caja h2 {
+  background-color: #ff13a7;
+  padding: 5px;
+  border: #000000 solid 2px;
+  font-size: 15px;
+  height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockMasculino .caja h3 {
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#tablaStockMasculino .caja h4 {
+  font-size: 11px;
+  margin-top: 5px;
+}
+#tablaStockMasculino .caja .imgCaja {
   width: 120px;
   height: 130px;
+}
+#tablaStockMasculino .pacoRabannePh {
+  grid-area: pacoRabannePh;
+}
+#tablaStockMasculino .pacoRabanneOM {
+  grid-area: pacoRabanneOM;
+}
+#tablaStockMasculino .pacoRabanneXSL {
+  grid-area: pacoRabanneXSL;
+}
+#tablaStockMasculino .pacoRabannXS {
+  grid-area: pacoRabanneXS;
+}
+#tablaStockMasculino .pacoRabannePURE {
+  grid-area: pacoRabannePURE;
+}
+#tablaStockMasculino .diorFHT {
+  grid-area: diorFHT;
+}
+#tablaStockMasculino .diorSAUV {
+  grid-area: diorSAUV;
+}
+#tablaStockMasculino .azzaro {
+  grid-area: azzaro;
+}
+#tablaStockMasculino .muglerAMEN {
+  grid-area: muglerAMEN;
+}
+#tablaStockMasculino .miyake {
+  grid-area: miyake;
+}
+#tablaStockMasculino .tommy {
+  grid-area: tommy;
+}
+#tablaStockMasculino .calvinKleinONE {
+  grid-area: calvinKleinONE;
+}
+#tablaStockMasculino .kenzo {
+  grid-area: kenzo;
+}
+#tablaStockMasculino .poloBlue {
+  grid-area: poloBlue;
+}
+#tablaStockMasculino .chBB {
+  grid-area: chBB;
+}
+#tablaStockMasculino .ch212CLA {
+  grid-area: ch212CLA;
+}
+#tablaStockMasculino .chVIP {
+  grid-area: chVIP;
+}
+#tablaStockMasculino .creed {
+  grid-area: creed;
+}
+#tablaStockMasculino .ombre {
+  grid-area: ombre;
+}
+#tablaStockMasculino .eros {
+  grid-area: eros;
+}
+#tablaStockMasculino .jeans {
+  grid-area: jeans;
+}
+#tablaStockMasculino .bvPourHomme {
+  grid-area: bvPourHomme;
+}
+#tablaStockMasculino .armaniACQUA {
+  grid-area: armaniACQUA;
+}
+#tablaStockMasculino .armaniCODE {
+  grid-area: armaniCODE;
+}
+#tablaStockMasculino .armaniYOU {
+  grid-area: armaniYOU;
 }
 
 /*# sourceMappingURL=style.css.map */
