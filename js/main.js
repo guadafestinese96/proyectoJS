@@ -7,6 +7,7 @@ switch (opcion) {
                 let ingresoCABA = parseInt(prompt("Ingrese los km desde Avenida Cabildo 900 hacia su dirección: "));
                 if(ingresoCABA <= 0){
                     alert("Error, ingrese un numero de kilómetros valido");
+                    break;
                 }else{
                     let resultado1 = ingresoCABA * 250;
                     alert ("El valor del envío por motomensajería a su domicilio es: $" + resultado1);
@@ -16,6 +17,7 @@ switch (opcion) {
                 let ingresoGBA = parseInt(prompt("Ingrese los km desde Avenida Patricios 200 hacia su dirección: "));
                 if(ingresoGBA <= 0){
                     alert("Error, ingrese un numero de kilómetros valido");
+                    break;
                 }else{
                     let resultado2 = ingresoGBA * 250;
                     alert ("El valor del envío por motomensajería a su domicilio es: $" + resultado2);
