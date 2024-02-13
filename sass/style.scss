@@ -1,18 +1,8 @@
-@import "stockMasculino";
-@import "stockFemenino";
-@import "envios";
-@import "footer";
-@import "index";
-@import "reset";
-
-
-
-
-
-
-
-
-
-
-
+@import "./envios/envios";
+@import "./footer/footer";
+@import "./inicio/index";
+@import "./stockFemenino/stockFemenino";
+@import "./reset/reset";
+@import "./stockMasculino/stockMasculino";
+@import "./contacto/contacto";
 
