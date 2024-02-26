@@ -148,6 +148,7 @@ const comprarPerfumesMujer = () => {
         encontrado = buscarPerfume(perfumesMujer, perfu);
         if (encontrado != undefined) {
             perfumesReservados.push(encontrado);
+            alert("Perfume encontrado");
         }
         seguir = prompt("Quiere seguir buscando perfumes de mujer? si o no");
     } while (seguir == "si");
@@ -162,11 +163,11 @@ const comprarPerfumesHombre = () => {
         encontrado = buscarPerfume(perfumesHombre, perfu);
         if (encontrado != undefined) {
             perfumesReservados.push(encontrado);
+            alert("Perfume encontrado");
         }
         seguir = prompt("Quiere seguir buscando perfumes de hombre? si o no");
     } while (seguir == "si");
 }
-
 
 
 do {
@@ -187,8 +188,15 @@ console.log(perfumesReservados);
 
 function acumuladorPrecios(arrayPerfumes){
     let acumulador = 0;
+    let contador = 0;
     for (const perfume of arrayPerfumes) {
         acumulador += perfume.precio;
+        contador +=1;
+    }
+    
+    if(contador >= 5){
+        console.log("Por llevar más de 5 perfumes tenés un 10% de descuento");
+        acumulador = acumulador - (acumulador*10/100);
     }
     return acumulador;
 }
