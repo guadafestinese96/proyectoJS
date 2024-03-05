@@ -86,6 +86,10 @@ function Perfume(genero, marca, nombre, cantidadMl, precio, img){
 // const inputEmail = document.getElementById("email");
 // const inputCelular = document.getElementById("celular");
 
+const perfu = new Perfume("femenino", "Armaf", "Untold", 60, 21000, "untold.jpg");
+perfumesMujer.push(perfu);
+console.log(perfumesMujer)
+
 
 
 do {
