@@ -20,6 +20,9 @@
         "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG"
     ;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .caja {
         background-color: #ffffff;

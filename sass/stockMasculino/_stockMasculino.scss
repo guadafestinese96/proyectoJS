@@ -21,6 +21,9 @@
         "armaniYOU armaniACQUA armaniCODE bvPourHomme vacio vacio vacio"
     ;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .caja {
         background-color: #ffffff;

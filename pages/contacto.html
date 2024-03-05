@@ -26,69 +26,68 @@
                 <li><a href="../pages/stockFemenino.html">STOCK FEMENINO</a></li>
                 <li><a href="../pages/stockMasculino.html">STOCK MASCULINO</a></li>
                 <li><a href="#">CONTACTO</a></li>
+                <li><a href="../pages/carrito.html">CARRITO</a></li>
             </ul>
         </nav>
     </header>
     <main id="mainContacto">
         <h1>CONTACTO</h1>
         <h2>Nos puedes contactar a través de nuestras redes sociales:</h2>
+        <div class="redesSociales">
+            <div class="wp">
+                <img src="../images/icons/whatsapp.png" alt="wp">
+                <p>POR WHATSAPP: 1161950112
+                    <a href="https://api.whatsapp.com/send/?phone=1161950112&text&type=phone_number&app_absent=0"
+                        target="_blank"><input type="button" value="ENVIAR MENSAJE"></a>
+                </p>
+            </div>
+            <div class="ig">
+                <img src="../images/icons/insta.png" alt="ig">
+                <p>POR INSTAGRAM: @widistoreok__
+                    <a href="https://www.instagram.com/widistoreok__/" target="_blank"><input type="button"
+                            value="VER EN INSTAGRAM"></a>
+                </p>
+            </div>
+        </div>
         
-            <form action="formularioContacto" class="formContacto">
-                <div class="redesSociales">
-                    <div class="wp">
-                        <img src="../images/icons/whatsapp.png" alt="wp">
-                        <p>POR WHATSAPP: 1161950112
-                            <a href="https://api.whatsapp.com/send/?phone=1161950112&text&type=phone_number&app_absent=0"
-                                target="_blank"><input type="button" value="ENVIAR MENSAJE"></a>
-                        </p>
-                    </div>
-                    <div class="ig">
-                        <img src="../images/icons/insta.png" alt="ig">
-                        <p>POR INSTAGRAM: @widistoreok__
-                            <a href="https://www.instagram.com/widistoreok__/" target="_blank"><input type="button"
-                                    value="VER EN INSTAGRAM"></a>
-                        </p>
-                    </div>
+        <form id="formularioContactoId">
+
+            <div class="cajaMsj">
+                <div class="datosPersonales">
+                    <article class="inputDiv">
+                        <img src="../images/icons/user_3288753.png" alt="usuario" class="logoCajaMsj">
+                        <h4>Nombre:</h4>
+                        <input type="text" class="inputContacto" id="nombre">
+                    </article>
+                    <article class="inputDiv">
+                        <img src="../images/icons/email_bco.png" alt="email" class="logoCajaMsj">
+                        <h4>Email:</h4>
+                        <input type="email" class="inputContacto" id="email">
+                        
+                    </article>
+
+                    <article class="inputDiv">
+                        <img src="../images/icons/call_3178167.png" alt="celular" class="logoCajaMsj">
+                        <h4>Celular:</h4>
+                        <input type="text" class="inputContacto" id="celular">
+                    </article>
                 </div>
-                <div class="cajaMsj">
-                    <div class="datosPersonales">
-                        <article class="inputDiv">
-                            <img src="../images/icons/user_3288753.png" alt="usuario" class="logoCajaMsj">
-                            <h4>Nombre:</h4>
-                            <input type="text" class="inputContacto" id="nombre">
-                        </article>
-                        <article class="inputDiv">
-                            <img src="../images/icons/email_bco.png" alt="email" class="logoCajaMsj">
-                            <h4>Email:</h4>
-                            <input type="email" class="inputContacto" id="email">
-                        </article>
+                <h5>Escriba aquí su pedido o consulta</h4>
+                <input type="text" class="textoConsulta">
+                
+                <select class="form-select contactoSelect" aria-label="Default select example">
+                    <option selected>SELECCIONE FORMA DE ENTREGA</option>
+                    <option value="1" class="opcion">1- RETIRO POR BELGRANO</option>
+                    <option value="2" class="opcion">2- RETIRO POR LA BOCA</option>
+                    <option value="3" class="opcion">3- ENVIO POR MOTOMENSAJERIA</option>
+                    <option value="4" class="opcion">4- ENVIO POR VIA CARGO</option>
+                </select>
 
-                        <article class="inputDiv">
-                            <img src="../images/icons/call_3178167.png" alt="celular" class="logoCajaMsj">
-                            <h4>Celular:</h4>
-                            <input type="text" class="inputContacto" id="celular">
-                        </article>
-                    </div>
+                <input type="submit" value="ENVIAR" class="botones" id="boton">
+                
+            </div>
+        </form>
 
-                    <div class="textoConsulta">
-                        <h2>Escriba aquí su pedido o consulta:</h2>
-                        <textarea name="textarea" rows="10" cols="50" class="textareaText"></textarea>
-                    </div>
-
-                    <select class="form-select contactoSelect" aria-label="Default select example">
-                        <option selected>SELECCIONE FORMA DE ENTREGA</option>
-                        <option value="1" class="opcion">1- RETIRO POR BELGRANO</option>
-                        <option value="2" class="opcion">2- RETIRO POR LA BOCA</option>
-                        <option value="3" class="opcion">3- ENVIO POR MOTOMENSAJERIA</option>
-                        <option value="4" class="opcion">4- ENVIO POR VIA CARGO</option>
-                    </select>
-
-                    <div class="boton">
-                        <input type="submit" value="ENVIAR MENSAJE" class="botones">
-                    </div>
-                </div>
-            </form>
-        
     </main>
     <footer>
         <div class="logosFooter">
@@ -103,7 +102,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/mainContacto.js"></script>
 
 </body>
 

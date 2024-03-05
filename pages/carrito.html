@@ -7,7 +7,7 @@
     <meta name="description" content="Perfumes economicos y persistentes">
     <meta name="keywords"
         content="perfumes, fragancias, calvin klein, dior, paco rabanne, dolce gabbana, carolina herrera, azzaro, creed, tom ford, kenzo, miyake, hilfiger, versace, armani, polo, bvlgary, mugler, lancome, yves saint lauren, moschino, givenchy">
-    <title>ENVIOS</title>
+    <title>CARRITO</title>
     <link rel="shortcut icon" href="../images/icons/widiLogoRedondo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,41 +20,34 @@
             <img src="../images/icons/widiLogoRedondo.png" alt="widilogo">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="#">ENVIOS</a></li>
+                <li><a href="../pages/envios.html">ENVIOS</a></li>
                 <li><a href="../pages/stockFemenino.html">STOCK FEMENINO</a></li>
                 <li><a href="../pages/stockMasculino.html">STOCK MASCULINO</a></li>
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                <li><a href="../pages/carrito.html">CARRITO</a></li>
+                <li><a href="#">CARRITO</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
-        <div class="titleEnvios">
-            <h1>ENVIOS</h1>
-            <h2>Realizamos envíos por Vía Cargo a todo el país y por motomensajería en CABA y GBA</h2>
-        </div>
-
-
-        <div class="centroEnvios">
-            <div class="imgEnvios">
-            <img src="../images/VIA-CARGO.png" alt="viaCargo" class="logoEnvios">
-            <img src="../images/motomensajeria.png" alt="moto" class="logoEnvios">
+        
+        <div id="titleCarrito">
+            <h1>CARRITO</h1>
+            <div class="buscadorPerfumes">
+                <h2>Ingrese el nombre del perfume de mujer que desea buscar</h2>
+                <input type="text" class="inputCarrito" id="inputMujer">
+                <button class="btnBuscar" id="btnMujer">Buscar</button>
             </div>
 
-            <div class="calcularEnvio">
-            <h3>Calculá tu envío</h3>
-            <select class="form-select" id="selectEnvios">
-            <option value="Default">Seleccioná tu zona</option>
-            <!-- <option value="1">BUENOS AIRES</option>
-            <option value="2">CENTRO</option>
-            <option value="3">NORTE</option>
-            <option value="4">SUR</option> -->
-            </select>
+            <div class="buscadorPerfumes">
+                <h2>Ingrese el nombre del perfume de hombre que desea buscar</h2>
+                <input type="text" class="inputCarrito" id="inputHombre">
+                <button class="btnBuscar" id="btnHombre">Buscar</button>
             </div>
-        </div>
+
+            <div id="contenedor" class="contenedor">
+                <!-- contenido dinámico -->
+            </div>
     </main>
-    
 
     <footer>
         <div class="logosFooter">
