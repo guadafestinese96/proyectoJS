@@ -73,7 +73,7 @@ const perfumesHombre = [
 const perfumesReservados = [];
 let seguirReservando;
 
-function Perfume(genero, marca, nombre, cantidadMl, precio, img){
+function Perfume(genero, marca, nombre, cantidadMl, precio, img) {
     this.genero = genero;
     this.marca = marca;
     this.nombre = nombre;
@@ -172,6 +172,7 @@ const comprarPerfumesMujer = () => {
         }
         seguir = prompt("Quiere seguir buscando perfumes de mujer? si o no");
     } while (seguir == "si");
+
 }
 
 const comprarPerfumesHombre = () => {
@@ -190,18 +191,18 @@ const comprarPerfumesHombre = () => {
 }
 
 
-do {
-    const consulta = prompt("Si quiere buscar comprar perfumes de mujer ingrese 1, de hombre ingrese 2: ");
-    if (consulta == 1) {
-        comprarPerfumesMujer();
-    } else if (consulta == 2) {
-        comprarPerfumesHombre();
-    } else {
-        console.log("Opcion inválida");
-    }
-    seguirReservando = prompt("Quiere seguir reservando perfumes de hombre o mujer? si o no: ");
+    do {
+        const consulta = prompt("Si quiere buscar comprar perfumes de mujer ingrese 1, de hombre ingrese 2: ");
+        if (consulta == 1) {
+            comprarPerfumesMujer();
+        } else if (consulta == 2) {
+            comprarPerfumesHombre();
+        } else {
+            console.log("Opcion inválida");
+        }
+        seguirReservando = prompt("Quiere seguir reservando perfumes de hombre o mujer? si o no: ");
 
-} while (seguirReservando != "no");
+    } while (seguirReservando != "no");
 
 alert("Perfumes elegidos: ");
 
@@ -211,18 +212,17 @@ for (const perfume of perfumesReservados) {
     alert(perfume.nombre);
 }
 
-
-function acumuladorPrecios(arrayPerfumes){
+function acumuladorPrecios(arrayPerfumes) {
     let acumulador = 0;
     let contador = 0;
     for (const perfume of arrayPerfumes) {
         acumulador += perfume.precio;
-        contador +=1;
+        contador += 1;
     }
-    
-    if(contador >= 5){
+
+    if (contador >= 5) {
         alert("Por llevar más de 5 perfumes tenés un 10% de descuento");
-        acumulador = acumulador - (acumulador*10/100);
+        acumulador = acumulador - (acumulador * 10 / 100);
     }
     return acumulador;
 }
@@ -285,8 +285,8 @@ btnMujer.addEventListener("click", ()=>{
 
 
 contenedor = document.querySelector("#contenedor");
-const noEncontrado= ()=>{
-    contenedor.innerHTML= "";
+const noEncontrado = () => {
+    contenedor.innerHTML = "";
     let html = `
     <div id="noEncontrado">
     <h2>No se encontró el perfume</h2>
@@ -320,24 +320,26 @@ const inputHombre = document.getElementById("inputHombre");
 
 btnMujer.addEventListener("click", () => {
     const filtrado = filtrarPerfumes(perfumesMujer, inputMujer.value);
+    (filtrado[0] != undefined) ? crearHtml(filtrado) : noEncontrado();
+    /*
     if (filtrado[0] != undefined) {
         crearHtml(filtrado);
     } else {
         noEncontrado();
-    }
+    }*/
     //console.log(filtrado);
-    
 });
 
 btnHombre.addEventListener("click", () => {
     const filtrado = filtrarPerfumes(perfumesHombre, inputHombre.value);
+    (filtrado[0] != undefined) ? crearHtml(filtrado) : noEncontrado();
+    /*
     if (filtrado[0] != undefined) {
         crearHtml(filtrado);
     } else {
        noEncontrado();
     }
-    //console.log(filtrado);
-    
+    console.log(filtrado);*/
 });
 /*
 
@@ -348,3 +350,4 @@ localStorage.setItem("carrito", JSON.stringify(perfu));
 
 const carritodels = JSON.parse(localStorage.getItem('carrito'))
 console.log(carritodels);*/
+
