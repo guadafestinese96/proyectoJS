@@ -22,3 +22,19 @@ boton.addEventListener("click", ()=>{
 })
 
 */
+const inputContactoDatos = document.querySelectorAll(".inputContacto");
+const inputNombre = inputContactoDatos[0];
+const inputEmail = inputContactoDatos[1];
+const inputCelular = inputContactoDatos[2];
+
+/*
+inputNombre.addEventListener("keyup", ()=>{
+    console.log(inputNombre.value);
+})
+inputEmail.addEventListener("keyup", ()=>{
+    console.log(inputEmail.value);
+})
+inputCelular.addEventListener("keyup", ()=>{
+    console.log(inputCelular.value);
+})
+*/

@@ -24,14 +24,84 @@
   padding: 30px;
   background-color: white;
   border-radius: 50px;
+  height: 230px;
 }
 .centroEnvios h3 {
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
-.centroEnvios #selectEnvios {
+.centroEnvios .calcularEnvio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.centroEnvios .calcularEnvio #selectEnvios {
   width: 250px;
+}
+.centroEnvios .calcularEnvio .btnEnvios {
+  font-size: 15px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #000000;
+  color: white;
+  margin: 10px;
+  height: 40px;
+}
+.centroEnvios .calcularEnvio .btnEnvios:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.cardZona {
+  margin-top: 10px;
+  background-color: white;
+  padding: 1.3rem;
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.cardZona h2 {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cardZona input {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btnCantKm {
+  font-size: 15px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #000000;
+  color: white;
+  margin: 10px;
+  height: 40px;
+}
+
+#arrayPrecio {
+  background-color: white;
+  border-radius: 20px;
+  width: 280px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+#arrayPrecio h2 {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -444,7 +514,7 @@ li {
 }
 #mainContacto .redesSociales .wp,
 #mainContacto .redesSociales .ig {
-  width: 400px;
+  width: 450px;
   padding: 20px;
   display: flex;
 }
@@ -591,8 +661,8 @@ li {
 .card {
   margin-top: 10px;
   padding: 1.3rem;
-  width: 220px;
-  height: 400px;
+  width: 260px;
+  height: 420px;
   border: 1px solid #777;
   border-radius: 5px;
   display: flex;
@@ -604,20 +674,27 @@ li {
 .card h3 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
+  text-transform: capitalize;
 }
 .card p {
+  height: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .card img {
   height: 180px;
+  margin-bottom: 5px;
 }
 .card .btnAgregar {
   background-color: #E4E4E4;
   padding: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   border-radius: 5px;
-  width: 80px;
+  width: 120px;
+  margin: 10px;
+}
+.card .btnAgregar:hover {
+  background-color: #ff13a7;
 }
 
 .contenedor {
@@ -636,6 +713,11 @@ li {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+}
+
+.elegidos {
+  background-color: white;
+  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
