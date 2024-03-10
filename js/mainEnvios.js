@@ -82,7 +82,7 @@ const arrayPrecio = (arr) => {
 }
 //--------------------------------------------------------------------------------------
 
-selectEnvios.addEventListener("change", ()=>{
-    let opcionElegida = selectEnvios.options(selectEnvios.selectedIndex.value)
+select.addEventListener("change", ()=>{
+    let opcionElegida = select.options(select.selectedIndex.value)
     alert(opcionElegida)
 }) 
