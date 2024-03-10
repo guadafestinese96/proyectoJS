@@ -31,7 +31,7 @@ function guardarEnStorageContacto(storage) {
     console.log(inputCelular.value);
     storage == "local" && localStorage.setItem("user", JSON.stringify(user));
     storage == "session" && sessionStorage.setItem("user", JSON.stringify(user));
-    console.log(guardado);
+    console.log("guardado");
 }
 
 
