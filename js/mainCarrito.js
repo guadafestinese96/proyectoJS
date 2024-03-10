@@ -123,6 +123,7 @@ function crearHtml(arr) {
     }
 }
 //------------------------------------------------------------------------------------------
+const btnFinalizar = document.querySelector("#btnFinalizar");
 
 //Funcion crear html desestructurada
 function crearHtml2(arr) {
@@ -132,36 +133,39 @@ function crearHtml2(arr) {
 
     for (const perfume of arr) {
         const { genero, marca, nombre, cantidadMl, precio, img } = perfume;
-        
         html = `
         <div class="card">
         <img src=" ../images/Perfumes/${img}" alt="${nombre}">
-                
                 <h3>${nombre}</h3>
                 <p>Marca: ${marca}</p>
                 <p>Cantidad: ${cantidadMl} ml</p>
                 <p>Genero: ${genero}</p>
                 <p>Precio: $${precio} </p>
-              
               <button class="btnAgregar" id="${nombre}Btn">Agregar al Carrito</button>
             </div>`;
         contenedor.innerHTML += html;
-
-        //poder agregar varios VER
-        
-        const btnAgregarClass = document.getElementsByClassName(".btnAgregar");
-        const btnAgregarAlCarrito = document.getElementById(`${nombre}Btn`)
-     
-
-        btnAgregarAlCarrito.addEventListener("click", () => {
-            carrito.push(perfume)
-            alert("Agregado")
-            console.log(carrito);
-
-        })
-
     }
 
+    const btnClass = document.querySelectorAll(".btnAgregar");
+
+    for (let index = 0; index < btnClass.length; index++) {
+        const btn = btnClass[index];
+        console.log(btn);
+        btn.addEventListener("click", ()=>{
+            console.log(`click boton ${btn.id}`)
+            carrito.push(btn);
+            console.log(carrito);
+            console.log(carrito.length);
+            btnFinalizar.addEventListener("click", ()=>{
+                console.log("Finalizo su compra");
+                console.log(carrito);
+                //localStorage.setItem("carrito", JSON.stringify(carrito));
+                return carrito;
+            })
+        })
+        
+    }
+    
 }
 
 
@@ -183,17 +187,24 @@ function filtrarPerfumes(arr, filtro) {
 //------------------------------------------------------------------------------------------
 
 //Boton de busqueda mujer
-btnMujer.addEventListener("click", () => {
-    const filtrado = filtrarPerfumes(perfumesMujer, inputMujer.value);
-    (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
-    /*
-    if (filtrado[0] != undefined) {
-        crearHtml(filtrado);
-    } else {
-        noEncontrado();
-    }
-    //console.log(filtrado);*/
-});
+//function filtradoMujer(){
+    btnMujer.addEventListener("click", () => {
+        const filtrado = filtrarPerfumes(perfumesMujer, inputMujer.value);
+        (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
+        /*
+        if (filtrado[0] != undefined) {
+            crearHtml(filtrado);
+        } else {
+            noEncontrado();
+        }*/
+        //console.log(filtrado);
+        return filtrado;
+    });
+
+//}
+
+//filtradoMujer();
+
 //------------------------------------------------------------------------------------------
 
 //Boton de busqueda hombre
