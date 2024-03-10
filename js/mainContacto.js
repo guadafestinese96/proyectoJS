@@ -1,7 +1,7 @@
 const formulario = document.querySelector("#formularioContactoId");
-console.log(formulario);
-
 const nombreForm = document.getElementById("nombre");
+const btnEnviar = document.getElementById("boton");
+const check = document.querySelector("#checkbox");
 
 
 formulario.addEventListener("submit", (event)=>{
@@ -15,26 +15,27 @@ formulario.addEventListener("submit", (event)=>{
     console.log(nombreForm.value);
 })
 
-/*
-const enviar = document.getElementById("boton");
-boton.addEventListener("click", ()=>{
-     console.log("Apretaste");
-})
 
-*/
 const inputContactoDatos = document.querySelectorAll(".inputContacto");
 const inputNombre = inputContactoDatos[0];
 const inputEmail = inputContactoDatos[1];
 const inputCelular = inputContactoDatos[2];
+const p = document.querySelector("#p")
 
-/*
-inputNombre.addEventListener("keyup", ()=>{
-    console.log(inputNombre.value);
-})
-inputEmail.addEventListener("keyup", ()=>{
-    console.log(inputEmail.value);
-})
-inputCelular.addEventListener("keyup", ()=>{
+function guardarEnStorageContacto(storage) {
+    let user = { nombre: inputNombre.value, mail: inputEmail.value, celular: inputCelular.value };
+    if (inputNombre.value == "" || inputEmail.value == ""|| inputCelular.value =="") {
+        p.innerHTML = "Los campos no pueden estar vacíos";
+        return;
+    }
     console.log(inputCelular.value);
+    storage == "local" && localStorage.setItem("user", JSON.stringify(user));
+    storage == "session" && sessionStorage.setItem("user", JSON.stringify(user));
+    console.log(guardado);
+}
+
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+     check.checked ? guardarEnStorageContacto("local") : guardarEnStorageContacto("session");
 })
-*/

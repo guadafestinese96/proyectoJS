@@ -1,4 +1,4 @@
-
+/* COMENTADO-----------------------
 const ingreso = (arrayOpciones) => {
     alert(arrayOpciones);
     let opcionIngresada = parseInt(prompt("Ingrese el número de opción que quiera seleccionar: "));
@@ -8,16 +8,6 @@ let opcionesZona = "Selecciona tu zona: \n1)BUENOS AIRES \n2)NORTE: Jujuy, Formo
 let opcionesCaba = "Si es de CABA ingrese 1, si es de GBA ingrese 2";
 let opcionZona;
 
-
-
-// const inputNombre = document.getElementById("nombre");
-// const inputEmail = document.getElementById("email");
-// const inputCelular = document.getElementById("celular");
-
-
-
-
-/* COMENTADO-----------------------
 do {
     opcionZona = ingreso(opcionesZona);
 
@@ -68,16 +58,8 @@ do {
     }
 } while (opcionZona != 5);
 
-------------FIN*/
 
-//console.log(`Hola ${inputNombre.value}, tu email es ${inputEmail.value} y tu celular es ${inputCelular.value}`);
-
-
-
- 
-
-/*
-    do {
+do {
         const consulta = prompt("Si quiere buscar comprar perfumes de mujer ingrese 1, de hombre ingrese 2: ");
         if (consulta == 1) {
             comprarPerfumesMujer();
@@ -115,31 +97,6 @@ function acumuladorPrecios(arrayPerfumes) {
 
 alert("El valor total de los perfumes que eligió es: $" + acumuladorPrecios(perfumesReservados));
 
-*/
-
-
-
-
-
-
-
-/*
-const btnHombre = document.getElementById("btnHombre");
-console.log(btnHombre);
-btnHombre.addEventListener("click", () => {
-    alert("Tocaste el boton de hombre");
-})
-
-
-const btnMujer = document.getElementById("btnMujer");
-console.log(btnMujer);
-btnMujer.addEventListener("click", ()=>{
-    alert("Tocaste el boton de mujer");
-})
-
-
-
-
 
 
 const carrito = []
@@ -150,15 +107,3 @@ localStorage.setItem("carrito", JSON.stringify(perfu));
 const carritodels = JSON.parse(localStorage.getItem('carrito'))
 console.log(carritodels);*/
 
-const selectEnvios = document.querySelector("#selectEnvios")
-const envioCaba = document.querySelector("#selectCaba");
-
-selectEnvios.addEventListener("change", ()=>{
-    let opcionElegida = selectEnvios.options(selectEnvios.selectedIndex.value)
-    alert(opcionElegida)
-})  
-
-// select.addEventListener("change", () => {
-//     let option = select.options(select.selectedIndex.value);
-//     console.log(option);
-// })

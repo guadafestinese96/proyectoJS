@@ -7,6 +7,13 @@ const btnMujer = document.querySelector("#btnMujer");
 const btnHombre = document.querySelector("#btnHombre");
 const perfumesReservados = [];
 let seguirReservando;
+const email = document.querySelector("#exampleInputEmail1")
+console.log(email.value);
+const contraseña = document.querySelector("#exampleInputPassword1")
+console.log(contraseña.value);
+const formCarrito = document.querySelector("#formCarrito");
+const check = document.querySelector("#exampleCheck1")
+const p = document.querySelector("#message");
 
 const perfumesMujer = [
     { genero: "femenino", marca: "Paco Rabanne", nombre: "lady million", cantidadMl: 60, precio: 21000, img: "ladyMillion.jpg" },
@@ -123,11 +130,11 @@ function crearHtml2(arr) {
     let html;
     const carrito = [];
 
-
     for (const perfume of arr) {
         const { genero, marca, nombre, cantidadMl, precio, img } = perfume;
-
-        html = `<div class="card">
+        
+        html = `
+        <div class="card">
         <img src=" ../images/Perfumes/${img}" alt="${nombre}">
                 
                 <h3>${nombre}</h3>
@@ -165,6 +172,8 @@ function buscarPerfume(array, perfu) {
     return array.find((elemento) => elemento.nombre.includes(perfu));
 }
 
+//------------------------------------------------------------------------------------------
+
 function filtrarPerfumes(arr, filtro) {
     const filtrado = arr.filter((el) => {
         return el.nombre.includes(filtro);
@@ -199,8 +208,27 @@ btnHombre.addEventListener("click", () => {
     }
     console.log(filtrado);*/
 });
+//------------------------------------------------------------------------------------------
 
-//
+function guardarEnStorage(storage) {
+    let user = { usuario: email.value, pass: contraseña.value };
+    if (user.usuario == "" || user.pass == "") {
+        p.innerHTML = "Los campos no pueden estar vacíos";
+        return;
+    }
+    storage == "local" && localStorage.setItem("user", JSON.stringify(user));
+    storage == "session" && sessionStorage.setItem("user", JSON.stringify(user));
+}
+//------------------------------------------------------------------------------------------
+
+formCarrito.addEventListener("submit", (e) => {
+    e.preventDefault();
+    check.checked ? guardarEnStorage("local") : guardarEnStorage("session");
+    //console.log(email.value);
+})
+
+//------------------------------------------------------------------------------------------
+
 
 /*
 const comprarPerfumesMujer = () => {
@@ -235,4 +263,5 @@ const comprarPerfumesHombre = () => {
 }
 
 */
+
 

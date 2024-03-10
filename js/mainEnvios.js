@@ -6,7 +6,12 @@ const opcionesEnvios = [
     "Sur"
 ]
 
-const select = document.querySelector("#selectEnvios");
+const select = document.querySelector("#selectEnvios")
+const envioCaba = document.querySelector("#selectCaba");
+const contenedorZona = document.querySelector("#contenedorZona");
+const btnCalcular = document.querySelector("#btnCalcular");
+
+//--------------------------------------------------------------------------------------
 opcionesEnvios.forEach((zona) => {
     let option = document.createElement("option");
     option.value = zona;
@@ -14,13 +19,10 @@ opcionesEnvios.forEach((zona) => {
     select.append(option);
 })
 
-
-const contenedorZona = document.querySelector("#contenedorZona");
-
+//--------------------------------------------------------------------------------------
 
 const precioEnvio = (arrayDir) => {
     contenedorZona.innerHTML = "";
-
 
     let html = `
     <div class="cardZona">
@@ -40,12 +42,10 @@ const precioEnvio = (arrayDir) => {
     })
 }
 
-
-const btnCalcular = document.querySelector("#btnCalcular");
-
+//--------------------------------------------------------------------------------------
 
 select.addEventListener("change", () => {
-    let option = select.options[selectEnvios.selectedIndex].value;
+    let option = select.options[select.selectedIndex].value;
     if (option == "Buenos Aires - CABA") {
         btnCalcular.addEventListener("click", () => {
             precioEnvio("Avenida Cabildo 900")
@@ -68,11 +68,10 @@ select.addEventListener("change", () => {
         btnCalcular.addEventListener("click", () => {
             arrayPrecio("El envío al Sur del país vale $15.000")
         })
-    } else {
-        alert("nada")
-    }
+    } 
 })
 
+//--------------------------------------------------------------------------------------
 const arrayPrecio = (arr) => {
     contenedorZona.innerHTML = "";
     let html = `
@@ -81,3 +80,9 @@ const arrayPrecio = (arr) => {
     </div>`;
     contenedorZona.innerHTML += html;
 }
+//--------------------------------------------------------------------------------------
+
+selectEnvios.addEventListener("change", ()=>{
+    let opcionElegida = selectEnvios.options(selectEnvios.selectedIndex.value)
+    alert(opcionElegida)
+}) 

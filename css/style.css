@@ -614,6 +614,14 @@ li {
   color: black;
   cursor: pointer;
 }
+#mainContacto #formularioContactoId .checkContacto {
+  display: flex;
+}
+#mainContacto #formularioContactoId .checkContacto h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin: 5px;
+}
 
 #titleCarrito {
   display: flex;
@@ -634,12 +642,16 @@ li {
   font-size: 20px;
   text-shadow: whitesmoke 2px 2px 2px;
 }
-#titleCarrito .buscadorPerfumes {
+#titleCarrito .buscadorHyM {
+  display: flex;
+}
+#titleCarrito .buscadorHyM .buscadorPerfumes {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-#titleCarrito .buscadorPerfumes .inputCarrito {
+#titleCarrito .buscadorHyM .buscadorPerfumes .inputCarrito {
   height: 40px;
   padding: 5px;
 }
@@ -656,6 +668,45 @@ li {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+#titleCarrito .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#titleCarrito #noEncontrado {
+  background-color: white;
+  border-radius: 20px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+#titleCarrito .elegidos {
+  background-color: white;
+  height: 200px;
+}
+#titleCarrito #formCarrito {
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#titleCarrito #formCarrito .form-check {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  margin-right: 10px;
+}
+#titleCarrito #formCarrito .form-check .form-check-input {
+  margin-right: 5px;
+}
+#titleCarrito #formCarrito .btnCarritoIngresar {
+  display: flex;
+  justify-content: end;
 }
 
 .card {
@@ -695,29 +746,6 @@ li {
 }
 .card .btnAgregar:hover {
   background-color: #ff13a7;
-}
-
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-#noEncontrado {
-  background-color: white;
-  border-radius: 20px;
-  width: 280px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.elegidos {
-  background-color: white;
-  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
