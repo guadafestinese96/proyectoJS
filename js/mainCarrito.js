@@ -7,13 +7,14 @@ const btnMujer = document.querySelector("#btnMujer");
 const btnHombre = document.querySelector("#btnHombre");
 const perfumesReservados = [];
 let seguirReservando;
-const email = document.querySelector("#exampleInputEmail1")
-console.log(email.value);
+/*const email = document.querySelector("#exampleInputEmail1")
+/console.log(email.value);
 const contraseña = document.querySelector("#exampleInputPassword1")
 console.log(contraseña.value);
 const formCarrito = document.querySelector("#formCarrito");
 const check = document.querySelector("#exampleCheck1")
 const p = document.querySelector("#message");
+
 
 const perfumesMujer = [
     { genero: "femenino", marca: "Paco Rabanne", nombre: "lady million", cantidadMl: 60, precio: 21000, img: "ladyMillion.jpg" },
@@ -49,7 +50,9 @@ const perfumesMujer = [
     { genero: "femenino", marca: "Carolina Herrera", nombre: "good girl", cantidadMl: 60, precio: 21000, img: "goodGirl.jpg" },
     { genero: "femenino", marca: "Tommy Hilfiger", nombre: "tommy girl", cantidadMl: 60, precio: 21000, img: "tommyM.jpg" },
 ];
+//PASAR A JSON y pasar a un js. Imprimir todo mediante js. Leer array de productos con map e imprimir. AGREGAR MODAL CHECK PARA CONFIRMAR AGREGADO AL CARRITO. PERMITIR ELIMINAR DEL CARRITO
 //------------------------------------------------------------------------------------------
+
 
 const perfumesHombre = [
     { genero: "masculino", marca: "Paco Rabanne", nombre: "invictus", cantidadMl: 60, precio: 21000, img: "invictus.jpg" },
@@ -94,149 +97,131 @@ const perfu = new Perfume("femenino", "Armaf", "Untold", 60, 21000, "untold.jpg"
 perfumesMujer.push(perfu);
 
 //------------------------------------------------------------------------------------------
+*/
 
 //Funcion para crear html de que no encontro el perfume
-const noEncontrado = () => {
-    contenedor.innerHTML = "";
-    let html = `
-    <div id="noEncontrado">
-    <h2>No se encontró el perfume</h2>
-    </div>`;
-    contenedor.innerHTML += html;
-}
+// const noEncontrado = () => {
+//     contenedor.innerHTML = "";
+//     let html = `
+//     <div id="noEncontrado">
+//     <h2>No se encontró el perfume</h2>
+//     </div>`;
+//     contenedor.innerHTML += html;
+// }
 //------------------------------------------------------------------------------------------
 
 //Función para crear estructura html del perfume encontrado
-function crearHtml(arr) {
-    contenedor.innerHTML = "";
-    let html;
+// function crearHtml(arr) {
+//     contenedor.innerHTML = "";
+//     let html;
 
-    for (const el of arr) {
-        html = `<div class="card">
-        <img src=" ../images/Perfumes/${el.img}" alt="${el.nombre}">
-                <h3>${el.nombre}</h3>
-                <p>Precio: $${el.precio} </p>
+//     for (const el of arr) {
+//         html = `<div class="card">
+//         <img src=" ../images/Perfumes/${el.img}" alt="${el.nombre}">
+//                 <h3>${el.nombre}</h3>
+//                 <p>Precio: $${el.precio} </p>
               
-              <button class="btnAgregar" id="${el.nombre}Btn">Agregar</button>
-            </div>`;
-        contenedor.innerHTML += html;
-    }
-}
-//------------------------------------------------------------------------------------------
-const btnFinalizar = document.querySelector("#btnFinalizar");
+//               <button class="btnAgregar" id="${el.nombre}Btn">Agregar</button>
+//             </div>`;
+//         contenedor.innerHTML += html;
+//     }
+// }
+// //------------------------------------------------------------------------------------------
+// const btnFinalizar = document.querySelector("#btnFinalizar");
 
-//Funcion crear html desestructurada
-function crearHtml2(arr) {
-    contenedor.innerHTML = "";
-    let html;
-    const carrito = [];
 
-    for (const perfume of arr) {
-        const { genero, marca, nombre, cantidadMl, precio, img } = perfume;
-        html = `
-        <div class="card">
-        <img src=" ../images/Perfumes/${img}" alt="${nombre}">
-                <h3>${nombre}</h3>
-                <p>Marca: ${marca}</p>
-                <p>Cantidad: ${cantidadMl} ml</p>
-                <p>Genero: ${genero}</p>
-                <p>Precio: $${precio} </p>
-              <button class="btnAgregar" id="${nombre}Btn">Agregar al Carrito</button>
-            </div>`;
-        contenedor.innerHTML += html;
-    }
 
-    const btnClass = document.querySelectorAll(".btnAgregar");
+//     const btnClass = document.querySelectorAll(".btnAgregar");
 
-    for (let index = 0; index < btnClass.length; index++) {
-        const btn = btnClass[index];
-        console.log(btn);
-        btn.addEventListener("click", ()=>{
-            console.log(`click boton ${btn.id}`)
-            carrito.push(btn);
-            console.log(carrito);
-            console.log(carrito.length);
-            btnFinalizar.addEventListener("click", ()=>{
-                console.log("Finalizo su compra");
-                console.log(carrito);
-                //localStorage.setItem("carrito", JSON.stringify(carrito));
-                return carrito;
-            })
-        })
+//     for (let index = 0; index < btnClass.length; index++) {
+//         const btn = btnClass[index];
+//         console.log(btn);
+//         btn.addEventListener("click", ()=>{
+//             console.log(`click boton ${btn.id}`)
+//             carrito.push(btn);
+//             console.log(carrito);
+//             console.log(carrito.length);
+//             btnFinalizar.addEventListener("click", ()=>{
+//                 console.log("Finalizo su compra");
+//                 console.log(carrito);
+//                 //localStorage.setItem("carrito", JSON.stringify(carrito));
+//                 return carrito;
+//             })
+//         })
         
-    }
+//     }
     
-}
+// }
 
 
+// //------------------------------------------------------------------------------------------
+
+
+// function buscarPerfume(array, perfu) {
+//     return array.find((elemento) => elemento.nombre.includes(perfu));
+// }
+
+// //------------------------------------------------------------------------------------------
+
+// function filtrarPerfumes(arr, filtro) {
+//     const filtrado = arr.filter((el) => {
+//         return el.nombre.includes(filtro);
+//     });
+//     return filtrado;
+// }
+// //------------------------------------------------------------------------------------------
+
+// //Boton de busqueda mujer
+// //function filtradoMujer(){
+//     btnMujer.addEventListener("click", () => {
+//         const filtrado = filtrarPerfumes(perfumesMujer, inputMujer.value);
+//         (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
+//         /*
+//         if (filtrado[0] != undefined) {
+//             crearHtml(filtrado);
+//         } else {
+//             noEncontrado();
+//         }*/
+//         //console.log(filtrado);
+//         return filtrado;
+//     });
+
+// //}
+
+// //filtradoMujer();
+
+// //------------------------------------------------------------------------------------------
+
+// //Boton de busqueda hombre
+// btnHombre.addEventListener("click", () => {
+//     const filtrado = filtrarPerfumes(perfumesHombre, inputHombre.value);
+//     (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
+//     /*
+//     if (filtrado[0] != undefined) {
+//         crearHtml(filtrado);
+//     } else {
+//        noEncontrado();
+//     }
+//     console.log(filtrado);*/
+// });
+// //------------------------------------------------------------------------------------------
+
+// function guardarEnStorage(storage) {
+//     let user = { usuario: email.value, pass: contraseña.value };
+//     if (user.usuario == "" || user.pass == "") {
+//         p.innerHTML = "Los campos no pueden estar vacíos";
+//         return;
+//     }
+//     storage == "local" && localStorage.setItem("user", JSON.stringify(user));
+//     storage == "session" && sessionStorage.setItem("user", JSON.stringify(user));
+// }
 //------------------------------------------------------------------------------------------
 
-
-function buscarPerfume(array, perfu) {
-    return array.find((elemento) => elemento.nombre.includes(perfu));
-}
-
-//------------------------------------------------------------------------------------------
-
-function filtrarPerfumes(arr, filtro) {
-    const filtrado = arr.filter((el) => {
-        return el.nombre.includes(filtro);
-    });
-    return filtrado;
-}
-//------------------------------------------------------------------------------------------
-
-//Boton de busqueda mujer
-//function filtradoMujer(){
-    btnMujer.addEventListener("click", () => {
-        const filtrado = filtrarPerfumes(perfumesMujer, inputMujer.value);
-        (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
-        /*
-        if (filtrado[0] != undefined) {
-            crearHtml(filtrado);
-        } else {
-            noEncontrado();
-        }*/
-        //console.log(filtrado);
-        return filtrado;
-    });
-
-//}
-
-//filtradoMujer();
-
-//------------------------------------------------------------------------------------------
-
-//Boton de busqueda hombre
-btnHombre.addEventListener("click", () => {
-    const filtrado = filtrarPerfumes(perfumesHombre, inputHombre.value);
-    (filtrado[0] != undefined) ? crearHtml2(filtrado) : noEncontrado();
-    /*
-    if (filtrado[0] != undefined) {
-        crearHtml(filtrado);
-    } else {
-       noEncontrado();
-    }
-    console.log(filtrado);*/
-});
-//------------------------------------------------------------------------------------------
-
-function guardarEnStorage(storage) {
-    let user = { usuario: email.value, pass: contraseña.value };
-    if (user.usuario == "" || user.pass == "") {
-        p.innerHTML = "Los campos no pueden estar vacíos";
-        return;
-    }
-    storage == "local" && localStorage.setItem("user", JSON.stringify(user));
-    storage == "session" && sessionStorage.setItem("user", JSON.stringify(user));
-}
-//------------------------------------------------------------------------------------------
-
-formCarrito.addEventListener("submit", (e) => {
-    e.preventDefault();
-    check.checked ? guardarEnStorage("local") : guardarEnStorage("session");
-    //console.log(email.value);
-})
+// formCarrito.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     check.checked ? guardarEnStorage("local") : guardarEnStorage("session");
+//     //console.log(email.value);
+// })
 
 //------------------------------------------------------------------------------------------
 
@@ -274,5 +259,28 @@ const comprarPerfumesHombre = () => {
 }
 
 */
+
+
+//Funcion crear html desestructurada
+function crearHtml2(arr) {
+    contenedor.innerHTML = "";
+    let html;
+    //const carrito = [];
+
+    for (const perfume of arr) {
+        const { genero, marca, nombre, cantidadMl, precio, img } = perfume;
+        html = `
+        <div class="card">
+        <img src=" ../images/Perfumes/${img}" alt="${nombre}">
+                <h3>${nombre}</h3>
+                <p>Marca: ${marca}</p>
+                <p>Cantidad: ${cantidadMl} ml</p>
+                <p>Genero: ${genero}</p>
+                <p>Precio: $${precio} </p>
+              <button class="btnAgregar" id="${nombre}Btn">Agregar al Carrito</button>
+            </div>`;
+        contenedor.innerHTML += html;
+    }
+}
 
 

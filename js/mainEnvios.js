@@ -18,6 +18,15 @@ opcionesEnvios.forEach((zona) => {
     option.innerText = zona;
     select.append(option);
 })
+//--------------------------------------------------------------------------------------
+const arrayPrecio = (arr) => {
+    contenedorZona.innerHTML = "";
+    let html = `
+    <div id="arrayPrecio">
+    <h2>${arr}</h2>
+    </div>`;
+    contenedorZona.innerHTML += html;
+}
 
 //--------------------------------------------------------------------------------------
 
@@ -28,19 +37,28 @@ const precioEnvio = (arrayDir) => {
     <div class="cardZona">
     <h2>Ingrese la cantidad de km desde la siguiente direccion: </h2>
     <h2>${arrayDir}</h2>
-    <input type="text" class="inputEnvios">
-    <button type="submit" id="btnCantKm" class="btnCantKm">Enviar</button>
+    <form id="formKm"> 
+        <input type="text" class="inputEnvios" id="inputEnvios">
+        <button type="submit" id="btnCantKm" class="btnCantKm">Enviar</button>
+    </form>
     </div>
     `;
     contenedorZona.innerHTML += html;
 
-    const cantKm = parseInt(document.querySelector("#inputEnvios"));
-    const btnCalcularPrecio = document.querySelector("#btnCantKm")
+    const cantKm = document.getElementById("inputEnvios");
+    console.log(cantKm.value);
+    const formKm = document.getElementById("formKm");
 
-    btnCalcularPrecio.addEventListener("click", () => {
-        alert(cantKm * 250)
+    formKm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log("Form enviado");
+        console.log(event.target[0].value);
+        const retorno = (event.target[0].value)*250;
+        arrayPrecio("El valor del envio es: $"+ retorno)
     })
+
 }
+
 
 //--------------------------------------------------------------------------------------
 
@@ -48,7 +66,7 @@ select.addEventListener("change", () => {
     let option = select.options[select.selectedIndex].value;
     if (option == "Buenos Aires - CABA") {
         btnCalcular.addEventListener("click", () => {
-            precioEnvio("Avenida Cabildo 900")
+            precioEnvio("Avenida Cabildo 900");
         })
 
     } else if (option == "Buenos Aires - GBA") {
@@ -68,21 +86,9 @@ select.addEventListener("change", () => {
         btnCalcular.addEventListener("click", () => {
             arrayPrecio("El envío al Sur del país vale $15.000")
         })
-    } 
+    }
 })
 
-//--------------------------------------------------------------------------------------
-const arrayPrecio = (arr) => {
-    contenedorZona.innerHTML = "";
-    let html = `
-    <div id="arrayPrecio">
-    <h2>${arr}</h2>
-    </div>`;
-    contenedorZona.innerHTML += html;
-}
+
 //--------------------------------------------------------------------------------------
 
-select.addEventListener("change", ()=>{
-    let opcionElegida = select.options(select.selectedIndex.value)
-    alert(opcionElegida)
-}) 

@@ -182,160 +182,256 @@ body header #navBar img {
   font-family: "Cedarville Cursive", cursive;
 }
 
-#mainFemenino h1 {
+.mainFemenino h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 10px;
   margin: 10px;
   text-shadow: #ff13a7 2px 2px 2px;
   letter-spacing: 0.1em;
 }
-
-#tablaStockFemenino {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
-  grid-template-areas: "pacoRabanneO pacoRabanneLM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorJ diorMD azzaro" "muglerAN muglerAL miyake lancome tommy yves dolceGabbana moschino" "givenchyL givenchyAD calvinKleinES calvinKleinET calvinKleinOS calvinKleinONE kenzo jesusDelPozo" "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG";
-  margin: 20px;
+.mainFemenino #contenedorMujer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-#tablaStockFemenino .caja {
-  background-color: #ffffff;
-  border: #000000 solid 2px;
-  padding: 10px;
-  width: 150px;
   align-items: center;
-  text-align: center;
   justify-content: center;
-}
-#tablaStockFemenino .caja h2 {
-  background-color: #ff13a7;
-  padding: 5px;
-  border: #000000 solid 2px;
-  font-size: 15px;
-  height: 60px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockFemenino .caja h3 {
-  background-color: #ffffff;
-  padding: 5px;
-  font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockFemenino .caja h4 {
-  font-size: 11px;
-  margin-top: 5px;
-}
-#tablaStockFemenino .caja .imgCaja {
-  width: 120px;
-  height: 130px;
-}
-#tablaStockFemenino .pacoRabanneO {
-  grid-area: pacoRabanneO;
-}
-#tablaStockFemenino .pacoRabanneLM {
-  grid-area: pacoRabanneLM;
-}
-#tablaStockFemenino .pacoRabanneXSL {
-  grid-area: pacoRabanneXSL;
-}
-#tablaStockFemenino .pacoRabannXS {
-  grid-area: pacoRabanneXS;
-}
-#tablaStockFemenino .pacoRabannePURE {
-  grid-area: pacoRabannePURE;
-}
-#tablaStockFemenino .diorJ {
-  grid-area: diorJ;
-}
-#tablaStockFemenino .diorMD {
-  grid-area: diorMD;
-}
-#tablaStockFemenino .azzaro {
-  grid-area: azzaro;
-}
-#tablaStockFemenino .muglerAN {
-  grid-area: muglerAN;
-}
-#tablaStockFemenino .muglerAL {
-  grid-area: muglerAL;
-}
-#tablaStockFemenino .miyake {
-  grid-area: miyake;
-}
-#tablaStockFemenino .lancome {
-  grid-area: lancome;
-}
-#tablaStockFemenino .tommy {
-  grid-area: tommy;
-}
-#tablaStockFemenino .yves {
-  grid-area: yves;
-}
-#tablaStockFemenino .dolceGabbana {
-  grid-area: dolceGabbana;
-}
-#tablaStockFemenino .moschino {
-  grid-area: moschino;
-}
-#tablaStockFemenino .givenchyL {
-  grid-area: givenchyL;
-}
-#tablaStockFemenino .givenchyAD {
-  grid-area: givenchyAD;
-}
-#tablaStockFemenino .givenchyAD img {
-  height: 120px;
-}
-#tablaStockFemenino .calvinKleinES {
-  grid-area: calvinKleinES;
-}
-#tablaStockFemenino .calvinKleinET {
-  grid-area: calvinKleinET;
-}
-#tablaStockFemenino .calvinKleinOS {
-  grid-area: calvinKleinOS;
-}
-#tablaStockFemenino .calvinKleinONE {
-  grid-area: calvinKleinONE;
-}
-#tablaStockFemenino .kenzo {
-  grid-area: kenzo;
-}
-#tablaStockFemenino .kenzo img {
-  height: 120px;
-  width: 80px;
-}
-#tablaStockFemenino .jesusDelPozo {
-  grid-area: jesusDelPozo;
-}
-#tablaStockFemenino .armaniMW {
-  grid-area: armaniMW;
-}
-#tablaStockFemenino .armaniCODE {
-  grid-area: armaniCODE;
-}
-#tablaStockFemenino .armaniSI {
-  grid-area: armaniSI;
-}
-#tablaStockFemenino .chGG {
-  grid-area: chGG;
-}
-#tablaStockFemenino .ch212CLA {
-  grid-area: ch212CLA;
-}
-#tablaStockFemenino .chVIP {
-  grid-area: chVIP;
-}
-#tablaStockFemenino .chROSE {
-  grid-area: chROSE;
-}
-#tablaStockFemenino .chSEXY {
-  grid-area: chSEXY;
+  text-align: center;
 }
 
+.cardMujer {
+  margin-top: 10px;
+  padding: 1.3rem;
+  width: 260px;
+  height: 420px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: white;
+}
+.cardMujer h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.cardMujer p {
+  height: 10px;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cardMujer img {
+  height: 180px;
+  margin-bottom: 5px;
+}
+.cardMujer .btnAgregar {
+  background-color: #ff13a7;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  border-radius: 5px;
+  width: 120px;
+  margin: 10px;
+}
+.cardMujer .btnAgregar:hover {
+  background-color: #E4E4E4;
+}
+
+/*
+#tablaStockFemenino {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "pacoRabanneO pacoRabanneLM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorJ diorMD azzaro"
+        "muglerAN muglerAL miyake lancome tommy yves dolceGabbana moschino"
+        "givenchyL givenchyAD calvinKleinES calvinKleinET calvinKleinOS calvinKleinONE kenzo jesusDelPozo"
+        "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG"
+    ;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .caja {
+        background-color: #ffffff;
+        border: #000000 solid 2px;
+        padding: 10px;
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        h2 {
+            background-color: #ff13a7;
+            padding: 5px;
+            border: #000000 solid 2px;
+            font-size: 15px;
+            height: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h3 {
+            background-color: #ffffff;
+            padding: 5px;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h4 {
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .imgCaja {
+            width: 120px;
+            height: 130px;
+        }
+    }
+
+    .pacoRabanneO {
+        grid-area: pacoRabanneO;
+    }
+
+    .pacoRabanneLM {
+        grid-area: pacoRabanneLM;
+    }
+
+    .pacoRabanneXSL {
+        grid-area: pacoRabanneXSL;
+    }
+
+    .pacoRabannXS {
+        grid-area: pacoRabanneXS;
+    }
+
+    .pacoRabannePURE {
+        grid-area: pacoRabannePURE;
+    }
+
+    .diorJ {
+        grid-area: diorJ;
+    }
+
+    .diorMD {
+        grid-area: diorMD;
+    }
+
+    .azzaro {
+        grid-area: azzaro;
+    }
+
+    .muglerAN {
+        grid-area: muglerAN;
+    }
+
+    .muglerAL {
+        grid-area: muglerAL;
+    }
+
+    .miyake {
+        grid-area: miyake;
+    }
+
+    .lancome {
+        grid-area: lancome;
+    }
+
+    .tommy {
+        grid-area: tommy;
+    }
+
+    .yves {
+        grid-area: yves;
+    }
+
+    .dolceGabbana {
+        grid-area: dolceGabbana;
+    }
+
+    .moschino {
+        grid-area: moschino;
+    }
+
+    .givenchyL {
+        grid-area: givenchyL;
+    }
+
+    .givenchyAD {
+        grid-area: givenchyAD;
+
+        img {
+            height: 120px;
+        }
+    }
+
+    .calvinKleinES {
+        grid-area: calvinKleinES;
+    }
+
+    .calvinKleinET {
+        grid-area: calvinKleinET;
+    }
+
+    .calvinKleinOS {
+        grid-area: calvinKleinOS;
+    }
+
+    .calvinKleinONE {
+        grid-area: calvinKleinONE;
+    }
+
+    .kenzo {
+        grid-area: kenzo;
+
+        img {
+            height: 120px;
+            width: 80px;
+        }
+    }
+
+    .jesusDelPozo {
+        grid-area: jesusDelPozo;
+    }
+
+    .armaniMW {
+        grid-area: armaniMW;
+    }
+
+    .armaniCODE {
+        grid-area: armaniCODE;
+    }
+
+    .armaniSI {
+        grid-area: armaniSI;
+    }
+
+    .chGG {
+        grid-area: chGG;
+    }
+
+    .ch212CLA {
+        grid-area: ch212CLA;
+    }
+
+    .chVIP {
+        grid-area: chVIP;
+    }
+
+    .chROSE {
+        grid-area: chROSE;
+    }
+
+    .chSEXY {
+        grid-area: chSEXY;
+    }
+
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -351,132 +447,213 @@ li {
   color: black;
 }
 
-#mainMasculino h1 {
+.mainMasculino h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 10px;
   margin: 10px;
   text-shadow: #ff13a7 2px 2px 2px;
   letter-spacing: 0.1em;
 }
-
-#tablaStockMasculino {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
-  grid-template-areas: "pacoRabannePh pacoRabanneOM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorFHT diorSAUV" "muglerAMEN miyake tommy calvinKleinONE kenzo poloBlue azzaro" "ch212CLA chVIP chBB creed ombre eros jeans" "armaniYOU armaniACQUA armaniCODE bvPourHomme vacio vacio vacio";
-  margin: 20px;
+.mainMasculino #contenedorHombre {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-#tablaStockMasculino .caja {
-  background-color: #ffffff;
-  border: #000000 solid 2px;
-  padding: 10px;
-  width: 150px;
   align-items: center;
-  text-align: center;
   justify-content: center;
-}
-#tablaStockMasculino .caja h2 {
-  background-color: #ff13a7;
-  padding: 5px;
-  border: #000000 solid 2px;
-  font-size: 15px;
-  height: 60px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockMasculino .caja h3 {
-  background-color: #ffffff;
-  padding: 5px;
-  font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-#tablaStockMasculino .caja h4 {
-  font-size: 11px;
-  margin-top: 5px;
-}
-#tablaStockMasculino .caja .imgCaja {
-  width: 120px;
-  height: 130px;
-}
-#tablaStockMasculino .pacoRabannePh {
-  grid-area: pacoRabannePh;
-}
-#tablaStockMasculino .pacoRabanneOM {
-  grid-area: pacoRabanneOM;
-}
-#tablaStockMasculino .pacoRabanneXSL {
-  grid-area: pacoRabanneXSL;
-}
-#tablaStockMasculino .pacoRabannXS {
-  grid-area: pacoRabanneXS;
-}
-#tablaStockMasculino .pacoRabannePURE {
-  grid-area: pacoRabannePURE;
-}
-#tablaStockMasculino .diorFHT {
-  grid-area: diorFHT;
-}
-#tablaStockMasculino .diorSAUV {
-  grid-area: diorSAUV;
-}
-#tablaStockMasculino .azzaro {
-  grid-area: azzaro;
-}
-#tablaStockMasculino .muglerAMEN {
-  grid-area: muglerAMEN;
-}
-#tablaStockMasculino .miyake {
-  grid-area: miyake;
-}
-#tablaStockMasculino .tommy {
-  grid-area: tommy;
-}
-#tablaStockMasculino .calvinKleinONE {
-  grid-area: calvinKleinONE;
-}
-#tablaStockMasculino .kenzo {
-  grid-area: kenzo;
-}
-#tablaStockMasculino .poloBlue {
-  grid-area: poloBlue;
-}
-#tablaStockMasculino .chBB {
-  grid-area: chBB;
-}
-#tablaStockMasculino .ch212CLA {
-  grid-area: ch212CLA;
-}
-#tablaStockMasculino .chVIP {
-  grid-area: chVIP;
-}
-#tablaStockMasculino .creed {
-  grid-area: creed;
-}
-#tablaStockMasculino .ombre {
-  grid-area: ombre;
-}
-#tablaStockMasculino .eros {
-  grid-area: eros;
-}
-#tablaStockMasculino .jeans {
-  grid-area: jeans;
-}
-#tablaStockMasculino .bvPourHomme {
-  grid-area: bvPourHomme;
-}
-#tablaStockMasculino .armaniACQUA {
-  grid-area: armaniACQUA;
-}
-#tablaStockMasculino .armaniCODE {
-  grid-area: armaniCODE;
-}
-#tablaStockMasculino .armaniYOU {
-  grid-area: armaniYOU;
+  text-align: center;
 }
 
+.cardHombre {
+  margin-top: 10px;
+  padding: 1.3rem;
+  width: 260px;
+  height: 420px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: white;
+}
+.cardHombre h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.cardHombre p {
+  height: 10px;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cardHombre img {
+  height: 180px;
+  margin-bottom: 5px;
+}
+.cardHombre .btnAgregar {
+  background-color: #ff13a7;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  border-radius: 5px;
+  width: 120px;
+  margin: 10px;
+}
+.cardHombre .btnAgregar:hover {
+  background-color: #E4E4E4;
+}
+
+/*
+#tablaStockMasculino {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "pacoRabannePh pacoRabanneOM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorFHT diorSAUV"
+        "muglerAMEN miyake tommy calvinKleinONE kenzo poloBlue azzaro"
+        "ch212CLA chVIP chBB creed ombre eros jeans"
+        "armaniYOU armaniACQUA armaniCODE bvPourHomme vacio vacio vacio"
+    ;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .caja {
+        background-color: #ffffff;
+        border: #000000 solid 2px;
+        padding: 10px;
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        h2 {
+            background-color: #ff13a7;
+            padding: 5px;
+            border: #000000 solid 2px;
+            font-size: 15px;
+            height: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h3 {
+            background-color: #ffffff;
+            padding: 5px;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        h4 {
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .imgCaja {
+            width: 120px;
+            height: 130px;
+        }
+    }
+
+    .pacoRabannePh {
+        grid-area: pacoRabannePh;
+    }
+
+    .pacoRabanneOM {
+        grid-area: pacoRabanneOM;
+    }
+
+    .pacoRabanneXSL {
+        grid-area: pacoRabanneXSL;
+    }
+
+    .pacoRabannXS {
+        grid-area: pacoRabanneXS;
+    }
+
+    .pacoRabannePURE {
+        grid-area: pacoRabannePURE;
+    }
+
+    .diorFHT {
+        grid-area: diorFHT;
+    }
+
+    .diorSAUV {
+        grid-area: diorSAUV;
+    }
+
+    .azzaro {
+        grid-area: azzaro;
+    }
+
+    .muglerAMEN {
+        grid-area: muglerAMEN;
+    }
+
+    .miyake {
+        grid-area: miyake;
+    }
+
+    .tommy {
+        grid-area: tommy;
+    }
+
+    .calvinKleinONE {
+        grid-area: calvinKleinONE;
+    }
+
+    .kenzo {
+        grid-area: kenzo;
+    }
+    .poloBlue{
+        grid-area: poloBlue;
+    }
+    .chBB {
+        grid-area: chBB;
+    }
+
+    .ch212CLA {
+        grid-area: ch212CLA;
+    }
+
+    .chVIP {
+        grid-area: chVIP;
+    }
+    .creed {
+        grid-area: creed;
+    }
+    .ombre {
+        grid-area: ombre;
+    }
+    .eros {
+        grid-area: eros;
+    }
+    .jeans {
+        grid-area: jeans;
+    }
+    .bvPourHomme {
+        grid-area: bvPourHomme;
+    }
+
+    .armaniACQUA {
+        grid-area: armaniACQUA;
+    }
+
+    .armaniCODE {
+        grid-area: armaniCODE;
+    }
+
+    .armaniYOU {
+        grid-area: armaniYOU;
+    }
+
+
+}*/
 #mainContacto {
   display: flex;
   flex-direction: column;
@@ -736,7 +913,7 @@ li {
   margin-bottom: 5px;
 }
 .card .btnAgregar {
-  background-color: #E4E4E4;
+  background-color: #ff13a7;
   padding: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 10px;
@@ -745,7 +922,7 @@ li {
   margin: 10px;
 }
 .card .btnAgregar:hover {
-  background-color: #ff13a7;
+  background-color: #E4E4E4;
 }
 
 /*# sourceMappingURL=style.css.map */

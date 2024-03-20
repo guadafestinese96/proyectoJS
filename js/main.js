@@ -107,3 +107,4 @@ localStorage.setItem("carrito", JSON.stringify(perfu));
 const carritodels = JSON.parse(localStorage.getItem('carrito'))
 console.log(carritodels);*/
 
+

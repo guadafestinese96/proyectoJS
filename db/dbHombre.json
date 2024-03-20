@@ -1,0 +1,204 @@
+{
+    "perfumesHombre": [
+      {
+        "genero": "masculino",
+        "marca": "Paco Rabanne",
+        "nombre": "invictus",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "invictus.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Paco Rabanne",
+        "nombre": "one million",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "oneMillion.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Paco Rabanne",
+        "nombre": "black xs",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "blackXsH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Paco Rabanne",
+        "nombre": "black xs lexcess",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "blackXsLexcessH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Paco Rabanne",
+        "nombre": "pure xs",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "pureXsH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Dior",
+        "nombre": "farenheit",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "fht.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Dior",
+        "nombre": "sauvage",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "sauvage.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Azzaro",
+        "nombre": "wanted",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "wantedH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Thierry Mugler",
+        "nombre": "a men",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "aMen.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Issey Miyake",
+        "nombre": "l'eau d'issey",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "miyakeH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Tommy Hilgfiger",
+        "nombre": "tommy",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "tommyH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Calvin Klein",
+        "nombre": "one",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "ckOne.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Kenzo",
+        "nombre": "kenzo",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "kenzoH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Ralph Lauren",
+        "nombre": "polo blue",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "poloBlue.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Carolina Herrera",
+        "nombre": "212 clasico",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "212claH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Carolina Herrera",
+        "nombre": "212 vip",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "212vipH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Carolina Herrera",
+        "nombre": "bad boy",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "badBoy.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Creed Adventus",
+        "nombre": "creed",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "creed.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Tom Ford",
+        "nombre": "ombre leather",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "ombre.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Armani",
+        "nombre": "you",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "you.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Armani",
+        "nombre": "acqua di gio",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "acquaDigGioH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Armani",
+        "nombre": "code",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "codeH.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Versace",
+        "nombre": "eros",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "eros.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Versace",
+        "nombre": "blue jeans",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "blueJeans.jpg"
+      },
+      {
+        "genero": "masculino",
+        "marca": "Bvlgary",
+        "nombre": "pour homme",
+        "cantidadMl": 60,
+        "precio": 21000,
+        "img": "pourHomme.jpg"
+      }
+    ]
+  }
