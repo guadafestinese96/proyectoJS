@@ -1,3 +1,4 @@
+//AGREGAR PERFUMES AL CARRITO, PONER BOTON PARA PERMITIR ELIMINAR (remove event.. )
 
 const contenedor = document.querySelector("#contenedor");
 const contenedorElegidos = document.querySelector("#perfumesElegidos");

@@ -233,7 +233,7 @@ body header #navBar img {
   font-size: 10px;
   border-radius: 5px;
   width: 120px;
-  margin: 10px;
+  margin-top: 40px;
 }
 .cardMujer .btnAgregar:hover {
   background-color: #E4E4E4;
@@ -498,7 +498,7 @@ li {
   font-size: 10px;
   border-radius: 5px;
   width: 120px;
-  margin: 10px;
+  margin-top: 40px;
 }
 .cardHombre .btnAgregar:hover {
   background-color: #E4E4E4;
