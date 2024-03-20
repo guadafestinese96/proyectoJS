@@ -31,6 +31,11 @@ function crearHtmlMujer(arr) {
             console.log("click "+ btn.id);
             carrito.push(btn.nombre)
             console.log(carrito);
+            Swal.fire({
+                title: "Agregado al carrito",
+                //text: "You clicked the button!",
+                icon: "success"
+              });
         })
     }
     
