@@ -20,6 +20,8 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+    align-items: center;
+    text-align: center;
 
     .imgEnvios {
         display: flex;
@@ -58,6 +60,7 @@
             color: white;
             margin: 10px;
             height: 40px;
+            border-radius: 10px;
         }
 
         .btnEnvios:hover {
@@ -104,6 +107,7 @@
     color: white;
     margin: 10px;
     height: 40px;
+    border-radius: 10px;
 }
 
 #arrayPrecio {

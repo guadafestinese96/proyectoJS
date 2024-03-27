@@ -14,6 +14,8 @@
   display: flex;
   justify-content: center;
   margin: 20px;
+  align-items: center;
+  text-align: center;
 }
 .centroEnvios .imgEnvios {
   display: flex;
@@ -48,6 +50,7 @@
   color: white;
   margin: 10px;
   height: 40px;
+  border-radius: 10px;
 }
 .centroEnvios .calcularEnvio .btnEnvios:hover {
   background-color: white;
@@ -86,6 +89,7 @@
   color: white;
   margin: 10px;
   height: 40px;
+  border-radius: 10px;
 }
 
 #arrayPrecio {
@@ -182,256 +186,6 @@ body header #navBar img {
   font-family: "Cedarville Cursive", cursive;
 }
 
-.mainFemenino h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 10px;
-  margin: 10px;
-  text-shadow: #ff13a7 2px 2px 2px;
-  letter-spacing: 0.1em;
-}
-.mainFemenino #contenedorMujer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.cardMujer {
-  margin-top: 10px;
-  padding: 1.3rem;
-  width: 260px;
-  height: 420px;
-  border: 1px solid #777;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  background-color: white;
-}
-.cardMujer h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  text-transform: capitalize;
-}
-.cardMujer p {
-  height: 10px;
-  margin: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.cardMujer img {
-  height: 180px;
-  margin-bottom: 5px;
-}
-.cardMujer .btnAgregar {
-  background-color: #ff13a7;
-  padding: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 10px;
-  border-radius: 5px;
-  width: 120px;
-  margin-top: 40px;
-}
-.cardMujer .btnAgregar:hover {
-  background-color: #E4E4E4;
-}
-
-/*
-#tablaStockFemenino {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    grid-template-areas:
-        "pacoRabanneO pacoRabanneLM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorJ diorMD azzaro"
-        "muglerAN muglerAL miyake lancome tommy yves dolceGabbana moschino"
-        "givenchyL givenchyAD calvinKleinES calvinKleinET calvinKleinOS calvinKleinONE kenzo jesusDelPozo"
-        "armaniMW armaniCODE armaniSI ch212CLA chSEXY chVIP chROSE chGG"
-    ;
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .caja {
-        background-color: #ffffff;
-        border: #000000 solid 2px;
-        padding: 10px;
-        width: 150px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-        h2 {
-            background-color: #ff13a7;
-            padding: 5px;
-            border: #000000 solid 2px;
-            font-size: 15px;
-            height: 60px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-        }
-
-        h3 {
-            background-color: #ffffff;
-            padding: 5px;
-            font-size: 13px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-        }
-
-        h4 {
-            font-size: 11px;
-            margin-top: 5px;
-        }
-
-        .imgCaja {
-            width: 120px;
-            height: 130px;
-        }
-    }
-
-    .pacoRabanneO {
-        grid-area: pacoRabanneO;
-    }
-
-    .pacoRabanneLM {
-        grid-area: pacoRabanneLM;
-    }
-
-    .pacoRabanneXSL {
-        grid-area: pacoRabanneXSL;
-    }
-
-    .pacoRabannXS {
-        grid-area: pacoRabanneXS;
-    }
-
-    .pacoRabannePURE {
-        grid-area: pacoRabannePURE;
-    }
-
-    .diorJ {
-        grid-area: diorJ;
-    }
-
-    .diorMD {
-        grid-area: diorMD;
-    }
-
-    .azzaro {
-        grid-area: azzaro;
-    }
-
-    .muglerAN {
-        grid-area: muglerAN;
-    }
-
-    .muglerAL {
-        grid-area: muglerAL;
-    }
-
-    .miyake {
-        grid-area: miyake;
-    }
-
-    .lancome {
-        grid-area: lancome;
-    }
-
-    .tommy {
-        grid-area: tommy;
-    }
-
-    .yves {
-        grid-area: yves;
-    }
-
-    .dolceGabbana {
-        grid-area: dolceGabbana;
-    }
-
-    .moschino {
-        grid-area: moschino;
-    }
-
-    .givenchyL {
-        grid-area: givenchyL;
-    }
-
-    .givenchyAD {
-        grid-area: givenchyAD;
-
-        img {
-            height: 120px;
-        }
-    }
-
-    .calvinKleinES {
-        grid-area: calvinKleinES;
-    }
-
-    .calvinKleinET {
-        grid-area: calvinKleinET;
-    }
-
-    .calvinKleinOS {
-        grid-area: calvinKleinOS;
-    }
-
-    .calvinKleinONE {
-        grid-area: calvinKleinONE;
-    }
-
-    .kenzo {
-        grid-area: kenzo;
-
-        img {
-            height: 120px;
-            width: 80px;
-        }
-    }
-
-    .jesusDelPozo {
-        grid-area: jesusDelPozo;
-    }
-
-    .armaniMW {
-        grid-area: armaniMW;
-    }
-
-    .armaniCODE {
-        grid-area: armaniCODE;
-    }
-
-    .armaniSI {
-        grid-area: armaniSI;
-    }
-
-    .chGG {
-        grid-area: chGG;
-    }
-
-    .ch212CLA {
-        grid-area: ch212CLA;
-    }
-
-    .chVIP {
-        grid-area: chVIP;
-    }
-
-    .chROSE {
-        grid-area: chROSE;
-    }
-
-    .chSEXY {
-        grid-area: chSEXY;
-    }
-
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -447,213 +201,6 @@ li {
   color: black;
 }
 
-.mainMasculino h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 10px;
-  margin: 10px;
-  text-shadow: #ff13a7 2px 2px 2px;
-  letter-spacing: 0.1em;
-}
-.mainMasculino #contenedorHombre {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.cardHombre {
-  margin-top: 10px;
-  padding: 1.3rem;
-  width: 260px;
-  height: 420px;
-  border: 1px solid #777;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  background-color: white;
-}
-.cardHombre h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  text-transform: capitalize;
-}
-.cardHombre p {
-  height: 10px;
-  margin: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.cardHombre img {
-  height: 180px;
-  margin-bottom: 5px;
-}
-.cardHombre .btnAgregar {
-  background-color: #ff13a7;
-  padding: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 10px;
-  border-radius: 5px;
-  width: 120px;
-  margin-top: 40px;
-}
-.cardHombre .btnAgregar:hover {
-  background-color: #E4E4E4;
-}
-
-/*
-#tablaStockMasculino {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    grid-template-areas:
-        "pacoRabannePh pacoRabanneOM pacoRabanneXSL pacoRabanneXS pacoRabannePURE diorFHT diorSAUV"
-        "muglerAMEN miyake tommy calvinKleinONE kenzo poloBlue azzaro"
-        "ch212CLA chVIP chBB creed ombre eros jeans"
-        "armaniYOU armaniACQUA armaniCODE bvPourHomme vacio vacio vacio"
-    ;
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .caja {
-        background-color: #ffffff;
-        border: #000000 solid 2px;
-        padding: 10px;
-        width: 150px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-        h2 {
-            background-color: #ff13a7;
-            padding: 5px;
-            border: #000000 solid 2px;
-            font-size: 15px;
-            height: 60px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-        }
-
-        h3 {
-            background-color: #ffffff;
-            padding: 5px;
-            font-size: 13px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-        }
-
-        h4 {
-            font-size: 11px;
-            margin-top: 5px;
-        }
-
-        .imgCaja {
-            width: 120px;
-            height: 130px;
-        }
-    }
-
-    .pacoRabannePh {
-        grid-area: pacoRabannePh;
-    }
-
-    .pacoRabanneOM {
-        grid-area: pacoRabanneOM;
-    }
-
-    .pacoRabanneXSL {
-        grid-area: pacoRabanneXSL;
-    }
-
-    .pacoRabannXS {
-        grid-area: pacoRabanneXS;
-    }
-
-    .pacoRabannePURE {
-        grid-area: pacoRabannePURE;
-    }
-
-    .diorFHT {
-        grid-area: diorFHT;
-    }
-
-    .diorSAUV {
-        grid-area: diorSAUV;
-    }
-
-    .azzaro {
-        grid-area: azzaro;
-    }
-
-    .muglerAMEN {
-        grid-area: muglerAMEN;
-    }
-
-    .miyake {
-        grid-area: miyake;
-    }
-
-    .tommy {
-        grid-area: tommy;
-    }
-
-    .calvinKleinONE {
-        grid-area: calvinKleinONE;
-    }
-
-    .kenzo {
-        grid-area: kenzo;
-    }
-    .poloBlue{
-        grid-area: poloBlue;
-    }
-    .chBB {
-        grid-area: chBB;
-    }
-
-    .ch212CLA {
-        grid-area: ch212CLA;
-    }
-
-    .chVIP {
-        grid-area: chVIP;
-    }
-    .creed {
-        grid-area: creed;
-    }
-    .ombre {
-        grid-area: ombre;
-    }
-    .eros {
-        grid-area: eros;
-    }
-    .jeans {
-        grid-area: jeans;
-    }
-    .bvPourHomme {
-        grid-area: bvPourHomme;
-    }
-
-    .armaniACQUA {
-        grid-area: armaniACQUA;
-    }
-
-    .armaniCODE {
-        grid-area: armaniCODE;
-    }
-
-    .armaniYOU {
-        grid-area: armaniYOU;
-    }
-
-
-}*/
 #mainContacto {
   display: flex;
   flex-direction: column;
@@ -691,9 +238,10 @@ li {
 }
 #mainContacto .redesSociales .wp,
 #mainContacto .redesSociales .ig {
-  width: 450px;
+  width: 400px;
   padding: 20px;
   display: flex;
+  font-size: 15px;
 }
 #mainContacto .redesSociales .wp input,
 #mainContacto .redesSociales .ig input {
@@ -703,6 +251,7 @@ li {
   margin: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
+  border-radius: 10px;
 }
 #mainContacto .redesSociales .wp input:hover,
 #mainContacto .redesSociales .ig input:hover {
@@ -716,11 +265,11 @@ li {
   flex-direction: column;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
 }
 #mainContacto #formularioContactoId .cajaMsj {
   background-color: #ff13a7;
   border: #000000 solid 2px;
+  border-radius: 10px;
   padding: 20px;
   margin: 5px;
   display: flex;
@@ -731,6 +280,7 @@ li {
 #mainContacto #formularioContactoId .cajaMsj .datosPersonales {
   display: flex;
   justify-content: center;
+  width: 800px;
 }
 #mainContacto #formularioContactoId .cajaMsj .datosPersonales #email {
   width: 300px;
@@ -785,6 +335,7 @@ li {
   background-color: #000000;
   color: white;
   margin: 10px;
+  border-radius: 10px;
 }
 #mainContacto #formularioContactoId .cajaMsj #boton:hover {
   background-color: white;
@@ -800,93 +351,81 @@ li {
   margin: 5px;
 }
 
-#titleCarrito {
+#mainRedes {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
   justify-content: center;
 }
-#titleCarrito h1,
-#titleCarrito h2 {
+#mainRedes h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 10px;
   margin: 10px;
   text-shadow: #ff13a7 2px 2px 2px;
-  width: 520px;
+  letter-spacing: 0.1em;
 }
-#titleCarrito h2 {
-  font-size: 20px;
-  text-shadow: whitesmoke 2px 2px 2px;
+#mainRedes h2 {
+  text-shadow: whitesmoke 2px 2px 5px;
+  font-size: 25px;
+  letter-spacing: -0.05em;
+  font-family: "Cedarville Cursive", cursive;
 }
-#titleCarrito .buscadorHyM {
-  display: flex;
-}
-#titleCarrito .buscadorHyM .buscadorPerfumes {
+#mainRedes .redesSociales {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  flex-direction: column;
 }
-#titleCarrito .buscadorHyM .buscadorPerfumes .inputCarrito {
-  height: 40px;
-  padding: 5px;
+#mainRedes .redesSociales p {
+  padding: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  height: 95px;
 }
-#titleCarrito .btnBuscar {
+#mainRedes .redesSociales img {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+#mainRedes .redesSociales .wp,
+#mainRedes .redesSociales .ig {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  font-size: 15px;
+}
+#mainRedes .redesSociales .wp input,
+#mainRedes .redesSociales .ig input {
   background-color: #000000;
   color: white;
   padding: 10px;
   margin: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
-  height: 45px;
+  border-radius: 10px;
 }
-#titleCarrito .btnBuscar:hover {
+#mainRedes .redesSociales .wp input:hover,
+#mainRedes .redesSociales .ig input:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
-#titleCarrito .contenedor {
+
+.mainFemenino h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: #ff13a7 2px 2px 2px;
+  letter-spacing: 0.1em;
+}
+.mainFemenino #contenedorMujer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-#titleCarrito #noEncontrado {
-  background-color: white;
-  border-radius: 20px;
-  width: 280px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-#titleCarrito .elegidos {
-  background-color: white;
-  height: 200px;
-}
-#titleCarrito #formCarrito {
-  text-align: start;
-  justify-content: center;
-  align-items: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-#titleCarrito #formCarrito .form-check {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  margin-right: 10px;
-}
-#titleCarrito #formCarrito .form-check .form-check-input {
-  margin-right: 5px;
-}
-#titleCarrito #formCarrito .btnCarritoIngresar {
-  display: flex;
-  justify-content: end;
+  text-align: center;
 }
 
-.card {
+.cardPerfumes {
   margin-top: 10px;
   padding: 1.3rem;
   width: 260px;
@@ -898,31 +437,91 @@ li {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  background-color: white;
 }
-.card h3 {
+.cardPerfumes h3 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
   font-size: 20px;
   text-transform: capitalize;
 }
-.card p {
+.cardPerfumes p {
   height: 10px;
+  margin: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.card img {
+.cardPerfumes img {
   height: 180px;
   margin-bottom: 5px;
 }
-.card .btnAgregar {
+.cardPerfumes .btnAgregar {
   background-color: #ff13a7;
   padding: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 10px;
   border-radius: 5px;
   width: 120px;
-  margin: 10px;
+  margin-top: 40px;
 }
-.card .btnAgregar:hover {
+.cardPerfumes .btnAgregar:hover {
   background-color: #E4E4E4;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: #ff13a7 2px 2px 2px;
+  letter-spacing: 0.1em;
+}
+
+#contenedorHombre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.divCarrito {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.icon-cart {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-cart:hover {
+  cursor: pointer;
+}
+
+.containerIcono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countadorNum {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 25px;
+  margin: 5px;
+}
+
+.contadorProductos {
+  background-color: #000;
+  color: white;
+  font-size: 13px;
+  border-radius: 100%;
+  padding: 5px;
+  width: 25px;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
