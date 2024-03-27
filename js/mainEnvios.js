@@ -23,7 +23,7 @@ const arrayPrecio = (arr) => {
     contenedorZona.innerHTML = "";
     let html = `
     <div id="arrayPrecio">
-    <h2>${arr}</h2>
+    <h5 id="h5Precio">${arr}</h5>
     </div>`;
     contenedorZona.innerHTML += html;
 }
@@ -34,9 +34,9 @@ const precioEnvio = (arrayDir) => {
     contenedorZona.innerHTML = "";
 
     let html = `
-    <div class="cardZona">
-    <h2>Ingrese la cantidad de km desde la siguiente direccion: </h2>
-    <h2>${arrayDir}</h2>
+    <div id="cardZona">
+    <h5>Ingrese la cantidad de km desde la siguiente direccion: </h5>
+    <h5>${arrayDir}</h5>
     <form id="formKm"> 
         <input type="text" class="inputEnvios" id="inputEnvios">
         <button type="submit" id="btnCantKm" class="btnCantKm">Enviar</button>
