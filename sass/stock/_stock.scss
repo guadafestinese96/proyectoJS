@@ -1,5 +1,4 @@
-.mainFemenino {
-
+.mainStock {
 
     h1 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -10,7 +9,7 @@
     }
 
 
-    #contenedorMujer {
+    #contenedorStock {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -74,58 +73,8 @@ h2 {
     letter-spacing: 0.1em;
 }
 
-#contenedorHombre {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 
 
 
 
-
-.divCarrito{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-.icon-cart{
-    width: 40px;
-    height: 40px;
-
-}
-
-.icon-cart:hover {
-    cursor: pointer;
-}
-
-
-.containerIcono{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.countadorNum{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 25px;
-    margin: 5px;
-}
-
-.contadorProductos{
-    background-color: #000;
-    color: white;
-    font-size: 13px;
-    border-radius: 100%;
-    padding: 5px;
-    width: 25px;
-    margin: 5px; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
