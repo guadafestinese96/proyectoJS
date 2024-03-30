@@ -68,7 +68,6 @@ function removerDelCarrito(perfume) {
     }
     localStorage.setItem("perfumes", JSON.stringify(memoria));
 
-    
 }
 
 
@@ -78,6 +77,7 @@ function agregarAlCarrito(perfume) {
     let contador = 0;
     let memoria = JSON.parse(localStorage.getItem("perfumes"));
     console.log(memoria);
+    msjVacio();
     if (!memoria) {
         const nuevoPerfume = nuevoPerfumeMemoria(perfume);
         localStorage.setItem("perfumes", JSON.stringify([nuevoPerfume]));
@@ -129,7 +129,6 @@ msjVacio();
 
 
 
-
 btnBorrar.addEventListener("click", ()=>{
     reiniciarCarrito();
 })
@@ -141,3 +140,5 @@ function reiniciarCarrito(){
 }
 
 actualizarNumeroCarrito();
+
+

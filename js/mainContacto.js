@@ -2,26 +2,6 @@ const formulario = document.querySelector("#formularioContactoId");
 const nombreForm = document.getElementById("nombre");
 const btnEnviar = document.getElementById("boton");
 const check = document.querySelector("#checkbox");
-
-
-formulario.addEventListener("submit", (event)=>{
-    event.preventDefault();
-    console.log("Form enviado");
-    console.log(event.target[0]);
-    console.log(event.target[0].value);
-    console.log(event.target[1].value);
-    console.log(event.target[2].value);
-    console.log(event.target[3].value);
-    console.log(nombreForm.value);
-    
-    Swal.fire({
-        title: "Gracias por comunicarte con Widistore",
-        icon: "success"
-    });
-    formulario.reset();
-})
-
-
 const inputContactoDatos = document.querySelectorAll(".inputContacto");
 const inputNombre = inputContactoDatos[0];
 const inputEmail = inputContactoDatos[1];
@@ -31,8 +11,29 @@ const p = document.querySelector("#p")
 function guardarEnStorageContacto(storage) {
     let user = { nombre: inputNombre.value, mail: inputEmail.value, celular: inputCelular.value };
     if (inputNombre.value == "" || inputEmail.value == ""|| inputCelular.value =="") {
-        p.innerHTML = "Los campos no pueden estar vacíos";
+        //p.innerHTML = "Los campos no pueden estar vacíos";
+        Swal.fire({
+            title: "Los campos no pueden estar vacíos",
+            icon: "error"
+        });
         return;
+    }else{
+        formulario.addEventListener("submit", (event)=>{
+            event.preventDefault();
+            console.log("Form enviado");
+            console.log(event.target[0]);
+            console.log(event.target[0].value);
+            console.log(event.target[1].value);
+            console.log(event.target[2].value);
+            console.log(event.target[3].value);
+            console.log(nombreForm.value);
+            
+            Swal.fire({
+                title: "Gracias por comunicarte con Widistore",
+                icon: "success"
+            });
+            formulario.reset();
+        })
     }
     console.log(inputCelular.value);
     storage == "local" && localStorage.setItem("user", JSON.stringify(user));
