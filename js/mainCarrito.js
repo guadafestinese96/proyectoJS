@@ -111,7 +111,7 @@ function actualizarTotal() {
         cantidadPerfu.innerText = cant;
         precioFinal.innerText = precioTotal;
     }
-    actualizarNumeroCarrito();
+   
 }
 
 
