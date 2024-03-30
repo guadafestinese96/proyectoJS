@@ -1,4 +1,9 @@
 const contenedorPerfumesElegidos = document.getElementById("contenedorPerfumesCarrito");
+const cantidadPerfu = document.getElementById("cantidadPerfu");
+const precioFinal = document.getElementById("precio");
+const carritoVacio = document.getElementById("carritoVacio");
+const contenedorVacio = document.getElementById("msjVacio");
+const btnBorrar = document.getElementsByClassName("btnBorrar")[0];
 
 function crearCardsPerfumesElegidos() {
     contenedorPerfumesElegidos.innerHTML = "";
@@ -23,49 +28,52 @@ function crearCardsPerfumesElegidos() {
             </div>`;
 
         contenedorPerfumesElegidos.appendChild(nuevoPerfume);
-        
+
         nuevoPerfume.getElementsByTagName("button")[1].addEventListener("click", (e) => {
-            //agregarAlCarrito(perfume);
             const totalCantidadPerfume = e.target.parentElement.getElementsByTagName("span")[0];
             totalCantidadPerfume.innerText = agregarAlCarrito(perfume);
             crearCardsPerfumesElegidos();
-            
+            actualizarTotal();
+
+
         });
 
         nuevoPerfume.getElementsByTagName("button")[0].addEventListener("click", (e) => {
-            //removerDelCarrito(perfume);
             const totalCantidadPerfume = e.target.parentElement.getElementsByTagName("span")[0];
             crearCardsPerfumesElegidos();
             totalCantidadPerfume.innerText = removerDelCarrito(perfume);
             crearCardsPerfumesElegidos();
+            actualizarTotal();
+            msjVacio();
+
         })
-        
+
     }
 }
 
 
-    crearCardsPerfumesElegidos();
+crearCardsPerfumesElegidos();
+actualizarTotal();
 
 
-    function removerDelCarrito(perfume) {
-        const memoria = JSON.parse(localStorage.getItem("perfumes"));
-        const indiceProducto = memoria.findIndex(unPerfume => unPerfume.id === perfume.id);
-        if (memoria[indiceProducto].cantidad === 1) {
-            memoria.splice(indiceProducto, 1);
-            localStorage.setItem("perfumes", JSON.stringify(memoria));
-        }
-
-
-
-        else{
-         memoria[indiceProducto].cantidad-- ;
-        }
+function removerDelCarrito(perfume) {
+    const memoria = JSON.parse(localStorage.getItem("perfumes"));
+    const indiceProducto = memoria.findIndex(unPerfume => unPerfume.id === perfume.id);
+    if (memoria[indiceProducto].cantidad === 1) {
+        memoria.splice(indiceProducto, 1);
         localStorage.setItem("perfumes", JSON.stringify(memoria));
     }
 
+    else {
+        memoria[indiceProducto].cantidad--;
+    }
+    localStorage.setItem("perfumes", JSON.stringify(memoria));
+
+}
 
 
-    
+
+
 function agregarAlCarrito(perfume) {
     let contador = 0;
     let memoria = JSON.parse(localStorage.getItem("perfumes"));
@@ -88,4 +96,44 @@ function agregarAlCarrito(perfume) {
         localStorage.setItem("perfumes", JSON.stringify(nuevaMemoria));
         return contador;
     }
+}
+
+function actualizarTotal() {
+    const perfumes = JSON.parse(localStorage.getItem("perfumes"));
+    let cant = 0;
+    let precioTotal = 0;
+    if (perfumes && perfumes.length > 0) {
+        perfumes.forEach(perfume => {
+            cant += perfume.cantidad;
+            precioTotal += perfume.precio * perfume.cantidad;
+        });
+        cantidadPerfu.innerText = cant;
+        precioFinal.innerText = precioTotal;
+    }
+}
+
+
+
+function msjVacio() {
+    msjVacio.innerHTML = "";
+    const perfumes = JSON.parse(localStorage.getItem("perfumes"));
+    console.log(perfumes);
+    if (perfumes.length == 0) {
+        contenedorVacio.innerHTML = `<p id="carritoVacio">No hay nada en el carrito <a href="../pages/stock.html" class="btnAgregarPerfus">Agrega perfumes</a></p>`
+    }
+}
+
+msjVacio();
+
+
+
+
+btnBorrar.addEventListener("click", ()=>{
+    reiniciarCarrito();
+})
+
+function reiniciarCarrito(){
+    localStorage.removeItem("perfumes");
+    actualizarTotal();
+    crearCardsPerfumesElegidos();
 }

@@ -575,4 +575,33 @@ h2 {
   cursor: pointer;
 }
 
+#totales {
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 20px;
+}
+
+#carritoVacio {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.oculto {
+  display: none;
+}
+
+.btnAgregarPerfus {
+  background-color: white;
+  padding: 5px;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btnAgregarPerfus:hover {
+  background-color: #ff13a7;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
