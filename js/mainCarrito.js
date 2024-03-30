@@ -33,8 +33,7 @@ function crearCardsPerfumesElegidos() {
             const totalCantidadPerfume = e.target.parentElement.getElementsByTagName("span")[0];
             totalCantidadPerfume.innerText = agregarAlCarrito(perfume);
             crearCardsPerfumesElegidos();
-            actualizarTotal();
-
+            actualizarTotal(); 
 
         });
 
@@ -45,7 +44,7 @@ function crearCardsPerfumesElegidos() {
             crearCardsPerfumesElegidos();
             actualizarTotal();
             msjVacio();
-
+        
         })
 
     }
@@ -69,6 +68,7 @@ function removerDelCarrito(perfume) {
     }
     localStorage.setItem("perfumes", JSON.stringify(memoria));
 
+    
 }
 
 
@@ -96,6 +96,7 @@ function agregarAlCarrito(perfume) {
         localStorage.setItem("perfumes", JSON.stringify(nuevaMemoria));
         return contador;
     }
+    actualizarNumeroCarrito();
 }
 
 function actualizarTotal() {
@@ -110,6 +111,7 @@ function actualizarTotal() {
         cantidadPerfu.innerText = cant;
         precioFinal.innerText = precioTotal;
     }
+    actualizarNumeroCarrito();
 }
 
 
@@ -137,3 +139,5 @@ function reiniciarCarrito(){
     actualizarTotal();
     crearCardsPerfumesElegidos();
 }
+
+actualizarNumeroCarrito();

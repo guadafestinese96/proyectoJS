@@ -92,3 +92,4 @@ select.addEventListener("change", () => {
 
 //--------------------------------------------------------------------------------------
 
+actualizarNumeroCarrito();

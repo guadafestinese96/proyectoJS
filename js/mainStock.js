@@ -3,7 +3,6 @@ const contenedorStock = document.getElementById("contenedorStock");
 
 fetch('../db/dbPerfumes.json').then(res => res.json()).then(data => {
     const { perfumes } = data;
-    //console.log(perfumes);
     crearHtml(perfumes);
 });
 
@@ -13,15 +12,18 @@ function agregarAlCarrito(perfume) {
     if (!memoria) {
         const nuevoPerfume = nuevoPerfumeMemoria(perfume);
         localStorage.setItem("perfumes", JSON.stringify([nuevoPerfume]));
+        
     } else {
         const indiceProducto = memoria.findIndex(unPerfume => unPerfume.id === perfume.id);
         console.log(indiceProducto);
         const nuevaMemoria = memoria;
         if (indiceProducto === -1) {
             nuevaMemoria.push(nuevoPerfumeMemoria(perfume));
-            //localStorage.setItem("perfumes", JSON.stringify(memoria));
+           
+            
         } else {
             nuevaMemoria[indiceProducto].cantidad++;
+            
         }
         localStorage.setItem("perfumes", JSON.stringify(nuevaMemoria));
     }
@@ -60,24 +62,12 @@ function crearHtml(perfumes) {
                 title: "Agregado al carrito",
                 icon: "success"
             });
+            actualizarNumeroCarrito();
         }
         );
 
     }
-    actualizarNumeroCarrito();
+    
 }
 
-const contadorCarrito = document.getElementById("contadorCarrito");
-
-
-
-function actualizarNumeroCarrito() {
-    const memoria = JSON.parse(localStorage.getItem("perfumes"));
-    let contador = 0;
-    for (const item of memoria) {
-        contador++;
-        contadorCarrito.innerText = contador;
-    }
-
-}
 actualizarNumeroCarrito();

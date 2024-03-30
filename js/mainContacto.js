@@ -45,3 +45,5 @@ formulario.addEventListener("submit", (e) => {
     e.preventDefault();
      check.checked ? guardarEnStorageContacto("local") : guardarEnStorageContacto("session");
 })
+
+actualizarNumeroCarrito();
