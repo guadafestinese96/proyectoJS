@@ -17,24 +17,29 @@ function crearCardsPerfumesElegidos() {
                 </div>
             <div class="botones">
                 <button class="btnSumarYRestar">-</button>
-                <span class="cantidad">0</span>
+                <span class="cantidad">${perfume.cantidad}</span>
                 <button class="btnSumarYRestar">+</button>
                 </div>
             </div>`;
 
         contenedorPerfumesElegidos.appendChild(nuevoPerfume);
+        
         nuevoPerfume.getElementsByTagName("button")[1].addEventListener("click", (e) => {
-            agregarAlCarrito(perfume);
+            //agregarAlCarrito(perfume);
+            const totalCantidadPerfume = e.target.parentElement.getElementsByTagName("span")[0];
+            totalCantidadPerfume.innerText = agregarAlCarrito(perfume);
             crearCardsPerfumesElegidos();
-            const totalCantidad = e.target.parentElement.getElementsByTagName("span");
-
-            console.log(totalCantidad[0]);
+            
         });
 
         nuevoPerfume.getElementsByTagName("button")[0].addEventListener("click", (e) => {
-            removerDelCarrito(perfume);
+            //removerDelCarrito(perfume);
+            const totalCantidadPerfume = e.target.parentElement.getElementsByTagName("span")[0];
+            crearCardsPerfumesElegidos();
+            totalCantidadPerfume.innerText = removerDelCarrito(perfume);
             crearCardsPerfumesElegidos();
         })
+        
     }
 }
 
@@ -57,3 +62,30 @@ function crearCardsPerfumesElegidos() {
         }
         localStorage.setItem("perfumes", JSON.stringify(memoria));
     }
+
+
+
+    
+function agregarAlCarrito(perfume) {
+    let contador = 0;
+    let memoria = JSON.parse(localStorage.getItem("perfumes"));
+    console.log(memoria);
+    if (!memoria) {
+        const nuevoPerfume = nuevoPerfumeMemoria(perfume);
+        localStorage.setItem("perfumes", JSON.stringify([nuevoPerfume]));
+        contador = 1;
+    } else {
+        const indiceProducto = memoria.findIndex(unPerfume => unPerfume.id === perfume.id);
+        console.log(indiceProducto);
+        const nuevaMemoria = memoria;
+        if (indiceProducto === -1) {
+            nuevaMemoria.push(nuevoPerfumeMemoria(perfume));
+            contador = 1;
+        } else {
+            nuevaMemoria[indiceProducto].cantidad++;
+            contador = nuevaMemoria[indiceProducto].cantidad;
+        }
+        localStorage.setItem("perfumes", JSON.stringify(nuevaMemoria));
+        return contador;
+    }
+}
