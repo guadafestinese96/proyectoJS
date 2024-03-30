@@ -13,6 +13,12 @@ formulario.addEventListener("submit", (event)=>{
     console.log(event.target[2].value);
     console.log(event.target[3].value);
     console.log(nombreForm.value);
+    
+    Swal.fire({
+        title: "Gracias por comunicarte con Widistore",
+        icon: "success"
+    });
+    formulario.reset();
 })
 
 
