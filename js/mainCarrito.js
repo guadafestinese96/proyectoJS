@@ -52,7 +52,7 @@ function crearCardsPerfumesElegidos() {
 
 
 crearCardsPerfumesElegidos();
-actualizarTotal();
+
 
 
 function removerDelCarrito(perfume) {
@@ -114,7 +114,7 @@ function actualizarTotal() {
    
 }
 
-
+actualizarTotal();
 
 function msjVacio() {
     msjVacio.innerHTML = "";
